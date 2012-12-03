@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layers>
+    <!-- -*- extra stuff goes here -*- -->
+
+    <layer name="CirbRenoprime"
+        interface="cirb.renoprime.interfaces.cirbrenoprimelayer.ICirbRenoprimeLayer"
+    />
+</layers>
+

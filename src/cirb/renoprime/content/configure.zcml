@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    i18n_domain="cirb.renoprime">
+
+  <class class=".renoprime.RenoPrime">
+    <require
+        permission="zope2.View"
+        interface=".renoprime.IRenoPrime"
+        />
+  </class>
+
+</configure>

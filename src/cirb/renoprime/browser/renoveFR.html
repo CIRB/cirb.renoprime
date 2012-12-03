@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="stylesheet" href="http://openlayers.org/dev/examples/../theme/default/style.css" type="text/css">
+    <link rel="stylesheet" href="http://openlayers.org/dev/examples/style.css" type="text/css">
+    
+    <link rel="stylesheet" href="css/renove2.css" type="text/css">
+    
+    <script src="javascript/OpenLayers-2.12/OpenLayers.debug.js"></script>
+    
+    <script type="text/javascript" src="javascript/jquery.js"></script>
+    
+    <script src="javascript/setup.js"></script>
+   
+    
+    <script src="javascript/geolocalize.js"></script>        
+    <script src="javascript/renove3.0.js"></script>
+    
+    <script>
+    //don't remove this part
+    
+    var LANG=0;
+    // if set to false: running the renove application else the embellissement application
+    var EMBELLIS_MODE=false;
+    </script>
+    
+    <script src="javascript/map.js"></script>
+    
+  </head>
+  <body onload="init()">
+    <!-- h1 id="title">Prime rénovation</h1-->
+
+    <div id="tags">
+        wms, layer, singletile
+    </div>
+    <!-- p id="shortdesc">
+        Prime rénovation
+    </p-->
+
+    <div style="width:650px; height:650px" id="map" ></div>
+
+    <div id="docs">            
+    <div id="addressLocatorComponent"> 
+    	<h3>Recherche d'adresse</h3>   	
+		<fieldset>
+    	<legend>Adresse</legend>
+    	<input name="address" id="address" type="text" placeholder="votre adresse (obligatoire)...">
+    	</fieldset><br>    	    	
+    </div>
+    <div id="businessContent">    	
+		<fieldset>
+    	<legend>Revenu</legend>
+    	<input name="income" id="income" type="text" placeholder="votre revenu (facultatif)...">
+    	</fieldset><br>    	    	
+    </div>
+    <button onclick="doSearch();">rechercher</button>
+	<div id="addressList"> liste d'adresses si plusieurs </div>
+	
+	<div id="responseText">
+		<h3>Taux de la prime</h3>    	
+		<fieldset>
+    	<legend>Revenu</legend>    	
+    	</fieldset><br>
+    	
+    	<table id=resultTable>
+			<tbody>
+			<tr>
+				<td class="TableauTitre">Localisation</td>
+				<td id="ratesLoc" class="TableauInfo">Centre de la carte</td>
+			</tr>
+				<tr>
+					<td class="TableauTitre">Type de zone *</td>
+					<td id="ratesZone" class="TableauInfo">Zone EDRLR</td>
+				</tr>
+			<tr>
+							<td valign="top" class="TableauTitre">Taux de la prime :<br>
+								<a href="http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation">plus d'info</a>
+							</td>
+							<td valign="top" id="ratesInfo" class="TableauInfo">
+								<p>Revenus inférieurs à 30000€ : 70%</p>
+								<p>entre 30000 et 60000€ : 40%</p>
+								<p>revenus supérieurs à 60000€ : 30%</p></td>
+			</tr>
+					<tr>
+							<td colspan="2" id="ratesNote" class="Note">* Le type de zone est donné à titre indicatif. Il sera verifié par le service logement sur la base de votre dossier. </td>
+						</tr>
+						</tbody>
+					</table>    	  	
+    </div>
+    <div id="layerSelectorComponent">
+    	<fieldset>
+    	<legend>Afficher les couches</legend>    	
+    	<input type="checkbox" id="contrats" name="contrats" value="contrats" checked="checked">Contrats de quartiers actifs<br>
+		<input type="checkbox" id="EDRLR" name="EDRLR" value="EDRLR" checked="checked">EDRLR<br>
+		</fieldset> 
+    </div>
+    </div>        
+  </body>
+  <script src="javascript/gui.js"></script>
+</html>
+
+
+
+

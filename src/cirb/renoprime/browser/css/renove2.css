@@ -1,0 +1,53 @@
+/*
+ * Site: Primes à la rénovation / à l'embellissement
+ * URL: http://www.primes-renovation.be/index.php
+ * File: renove.css
+ *
+ * @author 
+ * @version 
+ */
+
+/* UrbIS logo */
+.urbISLogo {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color: darkblue;
+    position: absolute;
+    left: 25px;
+    bottom: 10px;
+    z-Index: 999;
+}
+
+#map {
+    width: 650px;
+    height: 650px;
+    border: 1px solid gray;
+    float: left;
+    
+}
+ 
+.map {
+    width: 650px;
+    height: 650px;
+    border: 1px solid #ccc;
+}
+
+#docs {    
+    float: left;
+    border: 1px solid gray;
+    margin-left: 12px;
+    padding: 5px;
+    width: 220px;
+}
+/*
+#resultTable{
+	border: 1px solid #CCCCCC;
+    padding: 6px;
+}*/
+
+
+th, td {
+    border: 1px solid #CCCCCC;
+    padding: 6px;
+    text-align: left;
+}

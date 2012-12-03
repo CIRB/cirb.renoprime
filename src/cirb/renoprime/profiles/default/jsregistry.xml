@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts">
+
+    <javascript
+        id="++resource++cirb.renoprime.js/geolocalize.js"
+        cacheable="False" compression="safe" cookable="False"
+        enabled="True" expression=""  inline="False"/>
+
+    <javascript
+        id="++resource++cirb.renoprime.js/gui.js"
+        cacheable="False" compression="safe" cookable="False"
+        enabled="True" expression=""  inline="False"/>
+
+    <javascript
+        id="++resource++cirb.renoprime.js/map.js"
+        cacheable="False" compression="safe" cookable="False"
+        enabled="True" expression=""  inline="False"/>
+
+    <javascript
+        id="++resource++cirb.renoprime.js/renove3.0.js"
+        cacheable="False" compression="safe" cookable="False"
+        enabled="True" expression=""  inline="False"/>
+
+    <javascript
+        id="++resource++cirb.renoprime.js/setup.js"
+        cacheable="False" compression="safe" cookable="False"
+        enabled="True" expression=""  inline="False"/>
+
+</object>

@@ -1,0 +1,41 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           i18n_domain="cirb.renoprime">
+
+    <browser:page
+        for="*"
+        name="reno_view"
+        layer="..interfaces.ICirbRenoprimeLayer"
+        class=".mapview.MapView"
+        template="mapview.pt"
+        allowed_interface=".mapview.IMapView"
+        permission="zope.Public"
+        />
+
+    <browser:page
+        for="*"
+        name="prime_view"
+        layer="..interfaces.ICirbRenoprimeLayer"
+        class=".mapview.MapView"
+        template="mapview.pt"
+        allowed_interface=".mapview.IMapView"
+        permission="zope.Public"
+        />
+
+
+    <browser:resourceDirectory
+        name="cirb.renoprime.css"
+        directory="css"
+        layer="..interfaces.ICirbRenoprimeLayer" />
+
+    <browser:resourceDirectory
+        name="cirb.renoprime.js"
+        directory="js"
+        layer="..interfaces.ICirbRenoprimeLayer" />
+
+    <browser:resourceDirectory
+        name="cirb.renoprime.img"
+        directory="img"
+        layer="..interfaces.ICirbRenoprimeLayer" />
+
+</configure>
