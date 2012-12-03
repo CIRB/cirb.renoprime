@@ -7,7 +7,7 @@
         name="reno_view"
         layer="..interfaces.ICirbRenoprimeLayer"
         class=".mapview.MapView"
-        template="template/renoview.pt"
+        template="templates/renoview.pt"
         allowed_interface=".mapview.IMapView"
         permission="zope.Public"
         />
