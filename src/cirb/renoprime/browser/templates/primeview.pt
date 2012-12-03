@@ -13,7 +13,7 @@
             tal:define="testview view/test">
 
             <div id="tags">
-                wms, layer, singletile
+                wms, layer, singletile, prime
             </div>
 
             <div style="width:650px; height:650px" id="map" tal:attributes="data-today view/get_today"></div>

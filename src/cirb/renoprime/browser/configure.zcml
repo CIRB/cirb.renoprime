@@ -7,7 +7,7 @@
         name="reno_view"
         layer="..interfaces.ICirbRenoprimeLayer"
         class=".mapview.MapView"
-        template="mapview.pt"
+        template="template/renoview.pt"
         allowed_interface=".mapview.IMapView"
         permission="zope.Public"
         />
@@ -17,7 +17,7 @@
         name="prime_view"
         layer="..interfaces.ICirbRenoprimeLayer"
         class=".mapview.MapView"
-        template="mapview.pt"
+        template="templates/primeview.pt"
         allowed_interface=".mapview.IMapView"
         permission="zope.Public"
         />

@@ -1,0 +1,59 @@
+##############################################################################
+#
+# Copyright (c) 2003-2004 Zope Foundation and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+##############################################################################
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"POT-Creation-Date: Mon Dec  3 11:46:24 2012\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Zope 3 Developers <zope-dev@zope.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: zope/app/locales/extract.py\n"
+
+#: cirb.renoprime:/browser/mapview.py:42
+msgid "a dummy string"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:70
+#: cirb.renoprime:/browser/templates/renoview.pt:70
+msgid "Contrats de quartiers actifs"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:71
+#: cirb.renoprime:/browser/templates/renoview.pt:71
+msgid "EDRLR"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:72
+#: cirb.renoprime:/browser/templates/renoview.pt:72
+msgid "Espaces structurants"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:73
+#: cirb.renoprime:/browser/templates/renoview.pt:73
+msgid "Zichee"
+msgstr ""
+
+#: cirb.renoprime:/content/renoprime.py:34
+#. Default: "Text before map"
+msgid "label_before_map"
+msgstr ""
+
+#: cirb.renoprime:/content/renoprime.py:48
+#. Default: "Text below map"
+msgid "label_below_map"
+msgstr ""
+

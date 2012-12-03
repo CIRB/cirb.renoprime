@@ -24,4 +24,7 @@
     title="cirb.renoprime: Add Reno Prime Map"
     />
  
+  <i18n:registerTranslations directory="locales" />
+  <include package="Products.Archetypes"/>
+
 </configure>

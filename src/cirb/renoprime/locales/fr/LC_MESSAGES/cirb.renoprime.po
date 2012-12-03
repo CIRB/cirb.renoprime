@@ -1,0 +1,33 @@
+#: cirb.renoprime:/browser/mapview.py:42
+msgid "a dummy string"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:70
+#: cirb.renoprime:/browser/templates/renoview.pt:70
+msgid "Contrats de quartiers actifs"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:71
+#: cirb.renoprime:/browser/templates/renoview.pt:71
+msgid "EDRLR"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:72
+#: cirb.renoprime:/browser/templates/renoview.pt:72
+msgid "Espaces structurants"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:73
+#: cirb.renoprime:/browser/templates/renoview.pt:73
+msgid "Zichee"
+msgstr ""
+
+#. Default: "Text before map"
+#: cirb.renoprime:/content/renoprime.py:34
+msgid "label_before_map"
+msgstr ""
+
+#. Default: "Text below map"
+#: cirb.renoprime:/content/renoprime.py:48
+msgid "label_below_map"
+msgstr ""

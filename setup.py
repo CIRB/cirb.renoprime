@@ -41,7 +41,7 @@ setup(name='cirb.renoprime',
           'setuptools',
           # -*- Extra requirements: -*-
           'collective.geo.openlayers',
-          'cirb.wfsmap',
+          'Products.Archetypes',
       ],
       extras_require={'test': ['plone.app.testing']},
       entry_points="""

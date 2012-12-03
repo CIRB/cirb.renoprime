@@ -1,0 +1,82 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    lang="en"
+    metal:use-macro="here/main_template/macros/master"
+    i18n:domain="cirb.renoprime">
+
+    <tal:js metal:fill-slot="javascript_head_slot">    
+    <script type="text/javascript" tal:attributes="src string:${portal_url}/OpenLayers.debug.js"></script>
+    <script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++cirb.renoprime.js/init.js"></script>
+    </tal:js>
+    <body>
+        <div metal:fill-slot="main">
+            <tal:main-macro metal:define-macro="main"
+            tal:define="testview view/test">
+
+            <div id="tags">
+                wms, layer, singletile, reno
+            </div>
+
+            <div style="width:650px; height:650px" id="map" tal:attributes="data-today view/get_today"></div>
+
+            <div id="docs">            
+                <div id="addressLocatorComponent"> 
+                    <h3>Recherche d'adresse</h3>   	
+                    <fieldset>
+                        <legend>Adresse</legend>
+                        <input name="address" id="address" type="text" placeholder="votre adresse (obligatoire)...">
+                    </fieldset><br>    	    	
+                </div>
+                <div id="businessContent">    	
+                    <fieldset>
+                        <legend>Revenu</legend>
+                        <input name="income" id="income" type="text" placeholder="votre revenu (facultatif)...">
+                    </fieldset><br>    	    	
+                </div>
+                <button onclick="doSearch();">rechercher</button>
+                <div id="addressList"> liste d'adresses si plusieurs </div>
+
+                <div id="responseText">
+                    <h3>Taux de la prime</h3>    	
+                    <fieldset>
+                        <legend>Revenu</legend>    	
+                    </fieldset><br>
+
+                    <table id=resultTable>
+                        <tbody>
+                            <tr>
+                                <td class="TableauTitre">Localisation</td>
+                                <td id="ratesLoc" class="TableauInfo"></td>
+                            </tr>
+                            <tr>
+                                <td class="TableauTitre">Type de zone *</td>
+                                <td id="ratesZone" class="TableauInfo"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="TableauTitre">Taux de la prime :<br>
+                                    <a href="http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation">plus d'info</a>
+                                </td>
+                                <td valign="top" id="ratesInfo" class="TableauInfo">
+
+                                </tr>
+                                <tr>
+                                    <td colspan="2" id="ratesNote" class="Note">* Le type de zone est donné à titre indicatif. Il sera verifié par le service logement sur la base de votre dossier. </td>
+                                </tr>
+                            </tbody>
+                        </table>    	  	
+                    </div>
+                    <div id="layerSelectorComponent">
+                        <fieldset>
+                            <legend>Afficher les couches</legend>    	
+                            <input type="checkbox" id="contrats" name="contrats" value="contrats" checked="checked"><label for="contrats" i18n:translate="Contrats de quartiers actifs">Contrats de quartiers actifs</label> <br>
+                            <input type="checkbox" id="EDRLR" name="EDRLR" value="EDRLR" checked="checked"><label for="EDRLR" i18n:translate="EDRLR">EDRLR</label><br>
+                            <input type="checkbox" id="espaces" name="espaces" value="espaces" checked="checked"><label for="espaces" i18n:translate="Espaces structurants">Espaces structurants</label><br>
+                            <input type="checkbox" id="ZICHEE" name="ZICHEE" value="ZICHEE" checked="checked"><label for="ZICHEE" i18n:translate="Zichee">Zichee</label><br>
+                        </fieldset> 
+                    </div>
+                </div> 
+
+
+                </tal:main-macro>
+            </div>
+        </body>
+    </html>
