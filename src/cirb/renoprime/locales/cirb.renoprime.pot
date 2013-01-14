@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: Mon Jan 14 16:38:26 2013\n"
+"POT-Creation-Date: Mon Jan 14 16:51:02 2013\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope-dev@zope.org>\n"
@@ -62,10 +62,14 @@ msgstr ""
 msgid "Type de zone *"
 msgstr ""
 
+#: cirb.renoprime:/browser/templates/primeview.pt:40
+#: cirb.renoprime:/browser/templates/renoview.pt:44
+msgid "Taux de la prime :"
+msgstr ""
+
 #: cirb.renoprime:/browser/templates/primeview.pt:41
 #: cirb.renoprime:/browser/templates/renoview.pt:45
-#. Default: "Taux de la prime :<br> <a href=\"http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation\">x</a>"
-msgid "Taux de la prime :"
+msgid "http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation"
 msgstr ""
 
 #: cirb.renoprime:/browser/templates/primeview.pt:41

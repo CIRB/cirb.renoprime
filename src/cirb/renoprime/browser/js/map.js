@@ -448,4 +448,3 @@ function getBatiment(event,point)
     });
 
 }
-

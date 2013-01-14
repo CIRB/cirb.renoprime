@@ -37,8 +37,8 @@
                                 <td id="ratesZone" class="TableauInfo"></td>
                             </tr>
                             <tr>
-                                <td valign="top" class="TableauTitre" i18n:translate="Taux de la prime :">Taux de la prime :<br>
-                                    <a href="http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation" i18n:translate="plus d'info">plus d'info</a>
+                                <td valign="top" class="TableauTitre"><tal:block i18n:translate="Taux de la prime :">Taux de la prime :</tal:block><br>
+                                    <a i18n:attributes="href http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation" i18n:translate="plus d'info">plus d'info</a>
                                 </td>
                                 <td valign="top" id="ratesInfo" class="TableauInfo"></td>
 

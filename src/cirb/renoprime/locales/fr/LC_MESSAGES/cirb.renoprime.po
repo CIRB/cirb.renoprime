@@ -37,11 +37,15 @@ msgstr "Taux de la prie"
 msgid "Type de zone *"
 msgstr "Type de zone *"
 
-#. Default: "Taux de la prime :<br> <a href=\"http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation\">x</a>"
-#: cirb.renoprime:/browser/templates/primeview.pt:41
-#: cirb.renoprime:/browser/templates/renoview.pt:45
+#: cirb.renoprime:/browser/templates/primeview.pt:40
+#: cirb.renoprime:/browser/templates/renoview.pt:44
 msgid "Taux de la prime :"
 msgstr "Taux de la prime :"
+
+#: cirb.renoprime:/browser/templates/primeview.pt:41
+#: cirb.renoprime:/browser/templates/renoview.pt:45
+msgid "http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation"
+msgstr "http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:41
 #: cirb.renoprime:/browser/templates/renoview.pt:45
