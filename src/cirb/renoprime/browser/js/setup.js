@@ -8,10 +8,11 @@
  */
 
 
-var adress_wb_url="http://service.gis.irisnet.be/urbis/Rest/Localize/getaddresses";
-var wms_cirb_url="http://geoserver.gis.irisnet.be/wms";
-var urlBrugis="http://mybrugis.irisnetlab.be/geoserver/AATL/wms";
+//var adress_wb_url="http://service.gis.irisnet.be/urbis/Rest/Localize/getaddresses";
+var adress_wb_url="http://gis.irisnetlab.be/service/urbis/Rest/Localize/getaddresses";
+var wms_cirb_url="http://gis.irisnetlab.be/geoserver/wms";
+//var urlBrugis="http://mybrugis.irisnetlab.be/geoserver/AATL/wms";
+var urlBrugis="http://www.mybrugis.irisnet.be/geoserver/ows";   
 
 // language specified when the geolocalization service is called either FR or NL
 var language=["FR","NL"];
-

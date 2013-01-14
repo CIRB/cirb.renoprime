@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: Mon Dec  3 11:46:24 2012\n"
+"POT-Creation-Date: Mon Jan 14 16:38:26 2013\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope-dev@zope.org>\n"
@@ -27,23 +27,72 @@ msgstr ""
 msgid "a dummy string"
 msgstr ""
 
-#: cirb.renoprime:/browser/templates/primeview.pt:70
-#: cirb.renoprime:/browser/templates/renoview.pt:70
+#: cirb.renoprime:/browser/templates/primeview.pt:18
+#: cirb.renoprime:/browser/templates/renoview.pt:18
+msgid "Recherche d'adresse"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:20
+#: cirb.renoprime:/browser/templates/renoview.pt:20
+msgid "Adresse"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:21
+#: cirb.renoprime:/browser/templates/renoview.pt:21
+msgid "votreadresse(obligatoire)..."
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:26
+#: cirb.renoprime:/browser/templates/renoview.pt:30
+msgid "Rechercher"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:27
+#: cirb.renoprime:/browser/templates/renoview.pt:31
+msgid "liste d'adresses si plusieurs"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:30
+#: cirb.renoprime:/browser/templates/renoview.pt:34
+msgid "Taux de la prime"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:36
+#: cirb.renoprime:/browser/templates/renoview.pt:40
+msgid "Type de zone *"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:41
+#: cirb.renoprime:/browser/templates/renoview.pt:45
+#. Default: "Taux de la prime :<br> <a href=\"http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation\">x</a>"
+msgid "Taux de la prime :"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:41
+#: cirb.renoprime:/browser/templates/renoview.pt:45
+msgid "plus d'info"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:51
+#: cirb.renoprime:/browser/templates/renoview.pt:55
+msgid "Afficher les couches"
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:52
+#: cirb.renoprime:/browser/templates/renoview.pt:56
 msgid "Contrats de quartiers actifs"
 msgstr ""
 
-#: cirb.renoprime:/browser/templates/primeview.pt:71
-#: cirb.renoprime:/browser/templates/renoview.pt:71
+#: cirb.renoprime:/browser/templates/primeview.pt:53
+#: cirb.renoprime:/browser/templates/renoview.pt:57
 msgid "EDRLR"
 msgstr ""
 
-#: cirb.renoprime:/browser/templates/primeview.pt:72
-#: cirb.renoprime:/browser/templates/renoview.pt:72
+#: cirb.renoprime:/browser/templates/primeview.pt:54
 msgid "Espaces structurants"
 msgstr ""
 
-#: cirb.renoprime:/browser/templates/primeview.pt:73
-#: cirb.renoprime:/browser/templates/renoview.pt:73
+#: cirb.renoprime:/browser/templates/primeview.pt:55
 msgid "Zichee"
 msgstr ""
 

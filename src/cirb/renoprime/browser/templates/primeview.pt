@@ -9,64 +9,46 @@
     </tal:js>
     <body>
         <div metal:fill-slot="main">
-            <tal:main-macro metal:define-macro="main"
-            tal:define="testview view/test">
-
-            <div id="tags">
-                wms, layer, singletile, prime
-            </div>
+            <tal:main-macro metal:define-macro="main" tal:define="testview view/test">
 
             <div style="width:650px; height:650px" id="map" tal:attributes="data-today view/get_today"></div>
 
             <div id="docs">            
                 <div id="addressLocatorComponent"> 
-                    <h3>Recherche d'adresse</h3>   	
+                    <h3 i18n:translate="Recherche d'adresse">Recherche d'adresse</h3>   	
                     <fieldset>
-                        <legend>Adresse</legend>
-                        <input name="address" id="address" type="text" placeholder="votre adresse (obligatoire)...">
+                        <legend i18n:translate="Adresse">Adresse</legend>
+                        <input name="address" id="address" type="text" i18n:attributes="placeholder votreadresse(obligatoire)..." />
                     </fieldset><br>    	    	
                 </div>
                 <div id="businessContent">    	
-                    <fieldset>
-                        <legend>Revenu</legend>
-                        <input name="income" id="income" type="text" placeholder="votre revenu (facultatif)...">
-                    </fieldset><br>    	    	
                 </div>
-                <button onclick="doSearch();">rechercher</button>
-                <div id="addressList"> liste d'adresses si plusieurs </div>
+                <button onclick="doSearch();" i18n:translate="Rechercher">Rechercher</button>
+                <table id="addressList"> <tr> <td i18n:translate="liste d'adresses si plusieurs">liste d'adresses si plusieurs</td> </tr> </table>
 
                 <div id="responseText">
-                    <h3>Taux de la prime</h3>    	
-                    <fieldset>
-                        <legend>Revenu</legend>    	
-                    </fieldset><br>
+                    <h3 i18n:translate="Taux de la prime">Taux de la prime</h3>    	
+                    <br>
 
                     <table id=resultTable>
                         <tbody>
                             <tr>
-                                <td class="TableauTitre">Localisation</td>
-                                <td id="ratesLoc" class="TableauInfo"></td>
-                            </tr>
-                            <tr>
-                                <td class="TableauTitre">Type de zone *</td>
+                                <td class="TableauTitre" i18n:translate="Type de zone *">Type de zone *</td>
                                 <td id="ratesZone" class="TableauInfo"></td>
                             </tr>
                             <tr>
-                                <td valign="top" class="TableauTitre">Taux de la prime :<br>
-                                    <a href="http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation">plus d'info</a>
+                                <td valign="top" class="TableauTitre" i18n:translate="Taux de la prime :">Taux de la prime :<br>
+                                    <a href="http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation" i18n:translate="plus d'info">plus d'info</a>
                                 </td>
-                                <td valign="top" id="ratesInfo" class="TableauInfo">
+                                <td valign="top" id="ratesInfo" class="TableauInfo"></td>
 
-                                </tr>
-                                <tr>
-                                    <td colspan="2" id="ratesNote" class="Note">* Le type de zone est donné à titre indicatif. Il sera verifié par le service logement sur la base de votre dossier. </td>
                                 </tr>
                             </tbody>
                         </table>    	  	
                     </div>
                     <div id="layerSelectorComponent">
                         <fieldset>
-                            <legend>Afficher les couches</legend>    	
+                            <legend i18n:translate="Afficher les couches">Afficher les couches</legend>    	
                             <input type="checkbox" id="contrats" name="contrats" value="contrats" checked="checked"><label for="contrats" i18n:translate="Contrats de quartiers actifs">Contrats de quartiers actifs</label> <br>
                             <input type="checkbox" id="EDRLR" name="EDRLR" value="EDRLR" checked="checked"><label for="EDRLR" i18n:translate="EDRLR">EDRLR</label><br>
                             <input type="checkbox" id="espaces" name="espaces" value="espaces" checked="checked"><label for="espaces" i18n:translate="Espaces structurants">Espaces structurants</label><br>

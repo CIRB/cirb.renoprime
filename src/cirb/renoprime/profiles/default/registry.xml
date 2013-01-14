@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <registry>
-    <record name="cirb.novac.novac_url">
+    <record name="cirb.renoprime.gis_url">
         <field type="plone.registry.field.URI">
             <title>GIS URL</title>
             <description>Url used to GIS connection</description>
         </field>
-        <value>http://geoserver.gis.irisnet.be</value>
+        <value>http://gis.irisnetlab.be/</value>
     </record>
 </registry>
 

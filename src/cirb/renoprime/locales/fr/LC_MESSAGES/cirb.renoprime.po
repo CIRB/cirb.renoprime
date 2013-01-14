@@ -2,32 +2,81 @@
 msgid "a dummy string"
 msgstr ""
 
-#: cirb.renoprime:/browser/templates/primeview.pt:70
-#: cirb.renoprime:/browser/templates/renoview.pt:70
+#: cirb.renoprime:/browser/templates/primeview.pt:18
+#: cirb.renoprime:/browser/templates/renoview.pt:18
+msgid "Recherche d'adresse"
+msgstr "Rcherche d'adresse"
+
+#: cirb.renoprime:/browser/templates/primeview.pt:20
+#: cirb.renoprime:/browser/templates/renoview.pt:20
+msgid "Adresse"
+msgstr "Adresse"
+
+#: cirb.renoprime:/browser/templates/primeview.pt:21
+#: cirb.renoprime:/browser/templates/renoview.pt:21
+msgid "votreadresse(obligatoire)..."
+msgstr "Votre adresse (obligatoire)..."
+
+#: cirb.renoprime:/browser/templates/primeview.pt:26
+#: cirb.renoprime:/browser/templates/renoview.pt:30
+msgid "Rechercher"
+msgstr "Rechercher"
+
+#: cirb.renoprime:/browser/templates/primeview.pt:27
+#: cirb.renoprime:/browser/templates/renoview.pt:31
+msgid "liste d'adresses si plusieurs"
+msgstr "Liste d'adreesses (si plusieurs)"
+
+#: cirb.renoprime:/browser/templates/primeview.pt:30
+#: cirb.renoprime:/browser/templates/renoview.pt:34
+msgid "Taux de la prime"
+msgstr "Taux de la prie"
+
+#: cirb.renoprime:/browser/templates/primeview.pt:36
+#: cirb.renoprime:/browser/templates/renoview.pt:40
+msgid "Type de zone *"
+msgstr "Type de zone *"
+
+#. Default: "Taux de la prime :<br> <a href=\"http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation\">x</a>"
+#: cirb.renoprime:/browser/templates/primeview.pt:41
+#: cirb.renoprime:/browser/templates/renoview.pt:45
+msgid "Taux de la prime :"
+msgstr "Taux de la prime :"
+
+#: cirb.renoprime:/browser/templates/primeview.pt:41
+#: cirb.renoprime:/browser/templates/renoview.pt:45
+msgid "plus d'info"
+msgstr "plus d'info"
+
+#: cirb.renoprime:/browser/templates/primeview.pt:51
+#: cirb.renoprime:/browser/templates/renoview.pt:55
+msgid "Afficher les couches"
+msgstr "Afficher les couches"
+
+#: cirb.renoprime:/browser/templates/primeview.pt:52
+#: cirb.renoprime:/browser/templates/renoview.pt:56
 msgid "Contrats de quartiers actifs"
-msgstr ""
+msgstr "Contrats de quartiers actifs"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:71
-#: cirb.renoprime:/browser/templates/renoview.pt:71
+#: cirb.renoprime:/browser/templates/primeview.pt:53
+#: cirb.renoprime:/browser/templates/renoview.pt:57
 msgid "EDRLR"
-msgstr ""
+msgstr "EDRLR"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:72
-#: cirb.renoprime:/browser/templates/renoview.pt:72
+#: cirb.renoprime:/browser/templates/primeview.pt:54
 msgid "Espaces structurants"
-msgstr ""
+msgstr "Espaces structurants"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:73
-#: cirb.renoprime:/browser/templates/renoview.pt:73
+#: cirb.renoprime:/browser/templates/primeview.pt:55
 msgid "Zichee"
-msgstr ""
+msgstr "Zichee"
 
 #. Default: "Text before map"
 #: cirb.renoprime:/content/renoprime.py:34
 msgid "label_before_map"
-msgstr ""
+msgstr "Texte au-dessus de la carte"
 
 #. Default: "Text below map"
 #: cirb.renoprime:/content/renoprime.py:48
 msgid "label_below_map"
-msgstr ""
+msgstr "Texte en-dessous de la carte"
