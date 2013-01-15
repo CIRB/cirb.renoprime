@@ -5,82 +5,82 @@ msgstr ""
 #: cirb.renoprime:/browser/templates/primeview.pt:20
 #: cirb.renoprime:/browser/templates/renoview.pt:20
 msgid "Recherche d'adresse"
-msgstr ""
+msgstr "Zoek een straat op"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:22
 #: cirb.renoprime:/browser/templates/renoview.pt:22
 msgid "Adresse"
-msgstr ""
+msgstr "Adres"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:23
 #: cirb.renoprime:/browser/templates/renoview.pt:23
 msgid "votreadresse(obligatoire)..."
-msgstr ""
+msgstr "Uw adres (verplicht)"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:28
 #: cirb.renoprime:/browser/templates/renoview.pt:32
 msgid "Rechercher"
-msgstr ""
+msgstr "Zoeken"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:29
 #: cirb.renoprime:/browser/templates/renoview.pt:33
 msgid "liste d'adresses si plusieurs"
-msgstr ""
+msgstr "Opzoekresultaat"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:32
 #: cirb.renoprime:/browser/templates/renoview.pt:36
 msgid "Taux de la prime"
-msgstr ""
+msgstr "Percentage van de tussenkomst"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:38
 #: cirb.renoprime:/browser/templates/renoview.pt:42
 msgid "Type de zone *"
-msgstr ""
+msgstr "Zonetype"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:42
 #: cirb.renoprime:/browser/templates/renoview.pt:46
 msgid "Taux de la prime :"
-msgstr ""
+msgstr "Percentage van de tussenkomst:"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:43
 #: cirb.renoprime:/browser/templates/renoview.pt:47
 msgid "http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation"
-msgstr ""
+msgstr "http://www.huisvesting.irisnet.be/nl/premies-en-steunmaatregelen/premie-voor-de-renovatie-van-het-woonmilieu"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:43
 #: cirb.renoprime:/browser/templates/renoview.pt:47
 msgid "plus d'info"
-msgstr ""
+msgstr "Meer informatie"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:53
 #: cirb.renoprime:/browser/templates/renoview.pt:57
 msgid "Afficher les couches"
-msgstr ""
+msgstr "Lagen presenteren"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:54
 #: cirb.renoprime:/browser/templates/renoview.pt:58
 msgid "Contrats de quartiers actifs"
-msgstr ""
+msgstr "Actieve wijkcontracten"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:55
 #: cirb.renoprime:/browser/templates/renoview.pt:59
 msgid "EDRLR"
-msgstr ""
+msgstr "RBOHR"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:56
 msgid "Espaces structurants"
-msgstr ""
+msgstr "Structurerende ruimte"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:57
 msgid "Zichee"
-msgstr ""
+msgstr "GCHEWS"
 
 #. Default: "Text before map"
 #: cirb.renoprime:/content/renoprime.py:34
 msgid "label_before_map"
-msgstr ""
+msgstr "Tekst boven kaart"
 
 #. Default: "Text below map"
 #: cirb.renoprime:/content/renoprime.py:48
 msgid "label_below_map"
-msgstr ""
+msgstr "Tekst onder kaart"
