@@ -37,7 +37,6 @@
 
                 <div id="responseText">
                     <h3 i18n:translate="Taux de la prime">Taux de la prime</h3>    	
-                    <br>
 
                     <table id=resultTable>
                         <tbody>
@@ -46,7 +45,7 @@
                                 <td id="ratesZone" class="TableauInfo"></td>
                             </tr>
                             <tr>
-                                <td valign="top" class="TableauTitre"><tal:block i18n:translate="Taux de la prime :">Taux de la prime :</tal:block><br>
+                                <td valign="top" class="TableauTitre"><tal:block i18n:translate="Taux de la prime :">Taux de la prime :</tal:block><br><br>
                                     <a i18n:attributes="href http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation" i18n:translate="plus d'info">plus d'info</a>    
                                 </td>
                                 <td colspan="2" valign="top" id="ratesInfo" class="TableauInfo"></td>

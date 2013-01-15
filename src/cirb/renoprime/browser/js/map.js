@@ -14,9 +14,7 @@ var markers;
 
 var serie;
 
-var infoDateSerie = [
-"(La date de fin: ",
-    "(De einddatum "];
+var infoDateSerie = ["(La date de fin: ","(Einddatum "];
 
 var event;
 

@@ -74,7 +74,7 @@ function populateAccordion(idResults) {
 
     $('#ratesLoc').html('<p></p>');
     $("#ratesZone").text(zone);
-    $("#ratesInfo").text(rates);
+    $("#ratesInfo").html(rates);
     $("#ratesNote").text(noteI18nMsg);
     $("#infoURL").text(infoURLI18n[LANG]);
   
@@ -215,8 +215,8 @@ function getRenoveRates(idResults) {
     var ratesI18n = [];
     /*["Revenus inférieurs à 30000 € : {0}%, entre 30000 et 60000€ : {1}%, revenus supérieurs à 60000€ : {2}%",
         "Inkomen lager dan 30000€ : {0}%, tussen 30000 en 60000€ : {1}%, inkomen hoger dan 60000€ : {2}%"];*/
-    ratesI18n[0] = ["Revenus inférieurs à 30000 € : {0}%, entre 30000 et 60000€ : {1}%, revenus supérieurs à 60000€ : {2}%",
-                    "Inkomen lager dan 30000€ : {0}%, tussen 30000 en 60000€ : {1}%, inkomen hoger dan 60000€ : {2}%"];
+    ratesI18n[0] = ["Revenus inférieurs à 30000 € : {0}%,<br>entre 30000 et 60000€ : {1}%,<br>revenus supérieurs à 60000€ : {2}%",
+                    "Inkomen lager dan 30000€ : {0}%,<br>tussen 30000 en 60000€ : {1}%,<br>inkomen hoger dan 60000€ : {2}%"];
     ratesI18n[1] = ["Revenus inférieurs à 30000 € : {0}%",
                         "Inkomen lager dan 30000€ : {0}%"];
     ratesI18n[2] = ["Revenus entre 30000 et 60000€ : {1}%",
