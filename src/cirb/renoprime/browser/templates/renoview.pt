@@ -9,6 +9,8 @@
         <div metal:fill-slot="main">
             <tal:main-macro metal:define-macro="main" tal:define="testview view/test">
 
+            <div id="text_above_map" tal:content="structure context/getText_above_map"></div>
+
             <div style="width:650px; height:650px" id="map"
                 tal:attributes="data-today view/get_today;
                 data-gisurl view/get_gis_url;
@@ -64,6 +66,7 @@
             </form>
         </div> 
 
+        <div id="text_below_map" tal:content="structure context/getText_below_map"></div>
 
         </tal:main-macro>
     </div>

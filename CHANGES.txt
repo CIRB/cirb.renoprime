@@ -4,7 +4,7 @@ Changelog
 1.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- text_before_map and text_below_map are now visible on template.
 
 
 1.0 (2013-01-15)
