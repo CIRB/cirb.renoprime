@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<import-steps>
+    <import-step id="RenoPrime-install" version="20130115-01"
+        handler="cirb.renoprime.setuphandlers.setup"
+        title="Initialize Reno Prime">
+        <dependency name="registry"/>
+    </import-step>
+</import-steps>

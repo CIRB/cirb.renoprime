@@ -9,7 +9,7 @@
 
 
 function geolocalize(AddresstoSearch,language,viewObject) {
-    $.post(adress_wb_url, { language: language, address:AddresstoSearch },
+    $.post(address_wb_url, { language: language, address:AddresstoSearch },
             function(data) {
                 viewObject.clear();
                 data=jQuery.parseJSON(data);

@@ -5,7 +5,7 @@ msgstr ""
 #: cirb.renoprime:/browser/templates/primeview.pt:18
 #: cirb.renoprime:/browser/templates/renoview.pt:18
 msgid "Recherche d'adresse"
-msgstr "Rcherche d'adresse"
+msgstr "Recherche d'adresse"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:20
 #: cirb.renoprime:/browser/templates/renoview.pt:20
@@ -25,12 +25,12 @@ msgstr "Rechercher"
 #: cirb.renoprime:/browser/templates/primeview.pt:27
 #: cirb.renoprime:/browser/templates/renoview.pt:31
 msgid "liste d'adresses si plusieurs"
-msgstr "Liste d'adreesses (si plusieurs)"
+msgstr "Liste d'adresses (si plusieurs)"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:30
 #: cirb.renoprime:/browser/templates/renoview.pt:34
 msgid "Taux de la prime"
-msgstr "Taux de la prie"
+msgstr "Taux de la prime"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:36
 #: cirb.renoprime:/browser/templates/renoview.pt:40

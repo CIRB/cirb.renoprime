@@ -4,30 +4,32 @@
     i18n:domain="cirb.renoprime">
 
     <tal:js metal:fill-slot="javascript_head_slot">    
-    <script type="text/javascript" tal:attributes="src string:${portal_url}/OpenLayers.debug.js"></script>
-    <script type="text/javascript" tal:attributes="src string:${portal_url}/++resource++cirb.renoprime.js/init.js"></script>
     </tal:js>
     <body>
         <div metal:fill-slot="main">
             <tal:main-macro metal:define-macro="main" tal:define="testview view/test">
 
-            <div style="width:650px; height:650px" id="map" tal:attributes="data-today view/get_today"></div>
+            <div style="width:650px; height:650px" id="map"
+                tal:attributes="data-today view/get_today;
+                data-gisurl view/get_gis_url;
+                data-mybrugisurl view/get_brugis_url"></div>
 
             <div id="docs">            
-                <div id="addressLocatorComponent"> 
-                    <h3 i18n:translate="Recherche d'adresse">Recherche d'adresse</h3>	
-                    <fieldset>
-                        <legend i18n:translate="Adresse">Adresse</legend>
-                        <input name="address" id="address" type="text" i18n:attributes="placeholder votreadresse(obligatoire)..." />
-                    </fieldset><br>    	    	
-                </div>
-                <div id="businessContent">	
-                    <!--fieldset>
+                <form id="address_form" action=".">
+                    <div id="addressLocatorComponent"> 
+                        <h3 i18n:translate="Recherche d'adresse">Recherche d'adresse</h3>	
+                        <fieldset>
+                            <legend i18n:translate="Adresse">Adresse</legend>
+                            <input name="address" id="address" type="text" i18n:attributes="placeholder votreadresse(obligatoire)..." />
+                        </fieldset><br>    	    	
+                    </div>
+                    <div id="businessContent">	
+                        <!--fieldset>
                         <legend>Revenu</legend>
                         <input name="income" id="income" type="text" placeholder="votre revenu (facultatif)...">
                     </fieldset><br-->    	    	
                 </div>
-                <button onclick="doSearch();" i18n:translate="Rechercher">Rechercher</button>
+                <button type="submit" i18n:attributes="value Rechercher">Rechercher</button>
                 <table id="addressList"> <tr> <td i18n:translate="liste d'adresses si plusieurs">liste d'adresses si plusieurs</td> </tr> </table>
 
                 <div id="responseText">
@@ -59,10 +61,11 @@
                         <input type="checkbox" id="ZICHEE" name="ZICHEE" value="ZICHEE" checked="checked"><label for="ZICHEE" i18n:translate="Zichee">Zichee</label><br-->
                     </fieldset> 
                 </div>
-            </div> 
+            </form>
+        </div> 
 
 
-            </tal:main-macro>
-        </div>
-    </body>
+        </tal:main-macro>
+    </div>
+</body>
 </html>

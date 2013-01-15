@@ -5,7 +5,15 @@
             <title>GIS URL</title>
             <description>Url used to GIS connection</description>
         </field>
-        <value>http://gis.irisnetlab.be/</value>
+        <value>http://gis.irisnet.be/</value>
     </record>
+    <record name="cirb.renoprime.my_brugis_url">
+        <field type="plone.registry.field.URI">
+            <title>Brugis URL</title>
+            <description>Url used to My Brugis connection</description>
+        </field>
+        <value>http://www.mybrugis.irisnet.be/</value>
+    </record>
+
 </registry>
 

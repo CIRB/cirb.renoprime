@@ -7,7 +7,7 @@
  * @version november 2012                                             
  */
 
-var map, layer,layer_EDRLR,layer_espaces_structurants,layer_Zichee;
+var map, layer, layer_EDRLR, layer_espaces_structurants, layer_Zichee;
 
 var info;
 var markers;
@@ -64,10 +64,6 @@ function init()
         attribution: "Realized by means of Brussels UrbIS&reg;&copy;"
             }
             );                              
-
-    //var currentDate="$SERVER_CURRENT_DATE";               
-    today = $('#map').data('today');                    
-    var currentDate=new Date(today);
 
     //Date notification commune  et d¿ajouter 4 ans (moins 1 jour).4 ans (moins 1 jour)
 
@@ -200,11 +196,10 @@ function init()
          queryVisible: true,
          eventListeners: {
 
-             getfeatureinfo: function(event) 
-             {
+             getfeatureinfo: function(event) {
                  var size = new OpenLayers.Size(21,25);
                  var offset = new OpenLayers.Pixel(-(size.w/2), -size.h);
-                 var icon = new OpenLayers.Icon('images/marker.png', size, offset);
+                 var icon = new OpenLayers.Icon('++resource++cirb.renoprime.img/marker.png', size, offset);
                  markers.clearMarkers();
 
                  markers.addMarker(new OpenLayers.Marker(map.getLonLatFromViewPortPx(event.xy),icon));                           
@@ -298,8 +293,7 @@ function init()
     layer.setVisibility( $('#contrats').is(':checked'));
     layer_EDRLR.setVisibility( $('#EDRLR').is(':checked'));
 
-    if(EMBELLIS_MODE)
-    {
+    if(EMBELLIS_MODE) {
         layer_espaces_structurants.setVisibility(  $('#espaces').is(':checked'));
         layer_Zichee.setVisibility( $('#ZICHEE').is(':checked'));
     }

@@ -2,7 +2,7 @@
 <object name="Reno Prime"
    meta_type="Factory-based Type Information with dynamic views"
    i18n:domain="cirb.renoprime" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
-  <property name="title" i18n:translate="">Reno Prime Map</property>
+  <property name="title" i18n:translate="Reno Pime Map">Reno Prime Map</property>
   <property name="description"
     i18n:translate="">A map construct for renovation prime.</property>
   <property name="content_meta_type">RenoPrime</property>

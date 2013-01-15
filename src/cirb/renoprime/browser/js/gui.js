@@ -54,16 +54,10 @@ $(document).ready(function(){
         this.html(noresultI18n[LANG]);
     };
 
-    $('#address').keypress( function(event){
-
-        //prevent to submit the form
-        var keycode = (event.keyCode ? event.keyCode : event.which);
-        //if enter
-        if(keycode == '13') {
-            event.preventDefault();             
-            doSearch();                             
+    $('#address_form').submit( function(){
+        doSearch();                             
+        return false;
         }
-    }
     );
 
     $('#contrats').change(function() {

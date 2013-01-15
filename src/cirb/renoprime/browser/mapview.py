@@ -1,4 +1,6 @@
 from zope.interface import implements, Interface
+from zope.component import getUtility
+from plone.registry.interfaces import IRegistry
 
 from Products.Five import BrowserView
 from Products.CMFCore.utils import getToolByName
@@ -26,6 +28,7 @@ class MapView(BrowserView):
     def __init__(self, context, request):
         self.context = context
         self.request = request
+        self.registry = getUtility(IRegistry)
 
     @property
     def portal_catalog(self):
@@ -46,3 +49,11 @@ class MapView(BrowserView):
     def get_today(self):
         today = datetime.now()
         return today.strftime('%Y-%m-%d')
+
+    def get_gis_url(self):
+        url = self.registry.get('cirb.renoprime.gis_url', 'http://gis.irisnet.be/')
+        return url
+
+    def get_brugis_url(self):
+        url = self.registry.get('cirb.renoprime.my_brugis_url', 'http://www.mybrugis.irisnet.be/')
+        return url

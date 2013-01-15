@@ -40,7 +40,7 @@ setup(name='cirb.renoprime',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
-          'collective.geo.openlayers',
+          # 'collective.geo.openlayers',
           'Products.Archetypes',
       ],
       extras_require={'test': ['plone.app.testing']},
