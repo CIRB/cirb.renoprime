@@ -4,7 +4,7 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Title is now visible on template.
 
 
 1.0.1 (2013-01-15)

@@ -8,6 +8,7 @@
     <body>
         <div metal:fill-slot="main">
             <tal:main-macro metal:define-macro="main" tal:define="testview view/test">
+            <h1 id="title" tal:content="context/title"></h1>
  
             <div id="text_above_map" tal:content="structure context/getText_above_map"></div>
 
