@@ -15,7 +15,7 @@ msgstr "Adresse"
 #: cirb.renoprime:/browser/templates/primeview.pt:23
 #: cirb.renoprime:/browser/templates/renoview.pt:23
 msgid "votreadresse(obligatoire)..."
-msgstr "Votre adresse (obligatoire)..."
+msgstr "Votre adresse (obligatoire)"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:28
 #: cirb.renoprime:/browser/templates/renoview.pt:32
@@ -50,7 +50,7 @@ msgstr "http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation"
 #: cirb.renoprime:/browser/templates/primeview.pt:43
 #: cirb.renoprime:/browser/templates/renoview.pt:47
 msgid "plus d'info"
-msgstr "plus d'info"
+msgstr "Plus d'info"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:53
 #: cirb.renoprime:/browser/templates/renoview.pt:57
