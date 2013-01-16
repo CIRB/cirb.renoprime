@@ -28,7 +28,7 @@
                     </div>
                     <div id="businessContent">    	
                     </div>
-                    <button type="submit" i18n:attributes="value Rechercher">Rechercher</button>
+                    <button type="submit" i18n:attributes="value Rechercher" i18n:translate="Rechercher">Rechercher</button>
                     <table id="addressList"> <tr> <td i18n:translate="liste d'adresses si plusieurs">liste d'adresses si plusieurs</td> </tr> </table>
 
                     <div id="responseText">
