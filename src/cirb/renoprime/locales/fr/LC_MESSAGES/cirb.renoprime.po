@@ -35,7 +35,7 @@ msgstr "Taux de la prime"
 #: cirb.renoprime:/browser/templates/primeview.pt:38
 #: cirb.renoprime:/browser/templates/renoview.pt:42
 msgid "Type de zone *"
-msgstr "Type de zone *"
+msgstr "Type de zone"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:42
 #: cirb.renoprime:/browser/templates/renoview.pt:46
