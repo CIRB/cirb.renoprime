@@ -42,7 +42,7 @@
                                 </tr>
                                 <tr>
                                     <td valign="top" class="TableauTitre"><tal:block i18n:translate="Taux de la prime :">Taux de la prime :</tal:block><br><br>
-                                        <a i18n:attributes="href http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation" i18n:translate="plus d'info">plus d'info</a>
+                                        <a i18n:attributes="href http://www.logement.irisnet.be/fr/primes-et-aides/primes-facades" i18n:translate="plus d'info">plus d'info</a>
                                     </td>
                                     <td valign="top" id="ratesInfo" class="TableauInfo"></td>
 

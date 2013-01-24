@@ -57,3 +57,13 @@ class MapView(BrowserView):
     def get_brugis_url(self):
         url = self.registry.get('cirb.renoprime.my_brugis_url', 'http://www.mybrugis.irisnet.be/')
         return url
+
+
+class GetToday(BrowserView):
+    def __init__(self, context, request):
+        self.context = context
+        self.request = request
+
+    def get_today(self):
+        today = datetime.now()
+        return today.strftime('%Y-%m-%d')

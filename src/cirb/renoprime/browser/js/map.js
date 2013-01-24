@@ -14,12 +14,11 @@ var markers;
 
 var serie;
 
-var infoDateSerie = ["(La date de fin: ","(Einddatum "];
+var infoDateSerie = ["(La date de fin: ","(tot en met "];
 
 var event;
 
-function format_integer(num)
-{
+function format_integer(num) {
     var res=''+num;
     if(res.length<2)
         return res='0'+res;
@@ -27,8 +26,7 @@ function format_integer(num)
         return res; 
 }
 
-function init()
-{
+function init() {
 
     var options = {
         projection:"EPSG:31370",
@@ -62,15 +60,26 @@ function init()
         attribution: "Realized by means of Brussels UrbIS&reg;&copy;"
             }
             );                              
-
-    //Date notification commune  et d¿ajouter 4 ans (moins 1 jour).4 ans (moins 1 jour)
-
-    var isoCurrentDate=currentDate.getFullYear()+'-'+format_integer((currentDate.getMonth()+1))+'-'+format_integer(currentDate.getDate());
-
-    var isoLowerDate=currentDate.getFullYear()-4+'-'+format_integer((currentDate.getMonth()+1))+'-'+format_integer((currentDate.getDate()+1));
-
+    
+    //IE8 fix : 
+    /*$.get('getToday', function(data,status) {
+        console.log('today '+data);
+    });*/
     //console.log("isoLowerDate:"+isoLowerDate);
     //console.log("currentDate:"+isoCurrentDate);
+    div_map =  $('#map');
+    if (typeof div_map != 'undefined'){
+        currentDate=new Date();
+        isoCurrentDate=currentDate.getFullYear()+
+                '-'+format_integer((currentDate.getMonth()+1))+
+                '-'+format_integer(currentDate.getDate());
+
+
+        isoLowerDate=currentDate.getFullYear()-4+
+                '-'+format_integer((currentDate.getMonth()+1))+
+                '-'+format_integer((currentDate.getDate()+1));
+
+    }
 
     var filter = new OpenLayers.Filter.Comparison({
         type: OpenLayers.Filter.Comparison.BETWEEN,
@@ -309,39 +318,6 @@ function init()
 
 }    
 
-
-function getInfo(e)
-{
-    var opx = map.getLayerPxFromViewPortPx(e.xy) ; 
-
-    var loc = map.getLonLatFromPixel(opx);
-    //var tileInfo = getTileInfos(loc);
-
-    var urlGet='http://gis.irisnetlab.be/proxy?http://mybrugis.irisnetlab.be/geoserver/AATL/wms?'
-        +'LAYERS=EDRLR,Contrats_de_quartier&'
-        +'QUERY_LAYERS=EDRLR,Contrats_de_quartier&'
-        +'STYLES=&'
-        +'SERVICE=WMS&'
-        +'VERSION=1.3.0&'
-        +'REQUEST=GetFeatureInfo&'
-        +'EXCEPTIONS=INIMAGE&'
-        +'BBOX:146817.005906 168626.005906 152466.994094 174275.994094&'
-        +'FEATURE_COUNT=10&'
-        +'HEIGHT=256&'
-        +'WIDTH=256&'
-        +'FORMAT=image%252Fpng&'
-        +'INFO_FORMAT=application%252Fvnd.ogc.gml&'
-        +'CRS=EPSG:31370&'
-        +'SRS=EPSG:31370&'
-        +'I=45&'
-        +'J=54&'
-        +'filter=<ogc:Filter xmlns:ogc="http://www.opengis.net/ogc"><ogc:PropertyIsBetween><ogc:PropertyName>NOTIF_COMM</ogc:PropertyName><ogc:LowerBoundary><ogc:Literal>2008-12-05</ogc:Literal></ogc:LowerBoundary><ogc:UpperBoundary><ogc:Literal>2012-12-04</ogc:Literal></ogc:UpperBoundary></ogc:PropertyIsBetween></ogc:Filter>'
-        ;
-
-    $.get(urlGet, function(data) {                
-        alert('Load was performed.');
-    });
-}
 
 function getTileInfos(loc) 
 {

@@ -1,0 +1,1 @@
+<tal:block tal:content="view/get_today"></tal:block>

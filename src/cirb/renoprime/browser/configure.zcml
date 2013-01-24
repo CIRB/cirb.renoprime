@@ -22,6 +22,16 @@
         permission="zope.Public"
         />
 
+    <browser:page
+        for="*"
+        name="getToday"
+        layer="..interfaces.ICirbRenoprimeLayer"
+        class=".mapview.GetToday"
+        template="templates/gettoday.pt"
+        permission="zope.Public"
+        />
+
+
 
     <browser:resourceDirectory
         name="cirb.renoprime.css"
