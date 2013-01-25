@@ -59,16 +59,13 @@ function populateAccordion(idResults) {
     // gets rates
     var noteI18nMsg = noteI18n[LANG];
 
-    if (EMBELLIS_MODE) 
-    {
+    if (EMBELLIS_MODE) {
         getEmbellisRates(idResults);
-        if (embelisOutzone) 
-        {
+        if (embelisOutzone) {
             noteI18nMsg = noteI18nMsg + noteExtraI18n[LANG];
         }
     } 
-    else 
-    {
+    else {
         getRenoveRates(idResults);
     }
 
@@ -163,26 +160,20 @@ function getEmbellisRates(idResults) {
     
     
     var income=$('#income').val();
-    if(income==null||income.length==0)
-    {
+    if(income==null||income.length==0) {
         //global msg        
         rates = substitute(ratesI18n[0][LANG], prime_lower40K, prime_upper40K);
     }
-    else
-    {
-    if(income>40000)
-    {
-        // income > 40000           
+    else {
+        if(income>40000) {
+            // income > 40000           
             rates = substitute(ratesI18n[2][LANG], prime_lower40K, prime_upper40K);
+        }
+        else {
+            // income <= 40000      
+            rates = substitute(ratesI18n[1][LANG], prime_lower40K, prime_upper40K);
+        }
     }
-    else
-    {
-        // income <= 40000      
-        rates = substitute(ratesI18n[1][LANG], prime_lower40K, prime_upper40K);
-    }
-    }
-    
-    
 }
 
 /*
@@ -226,8 +217,7 @@ function getRenoveRates(idResults) {
     localisation = localisationI18n[0][LANG];
     zone = zoneI18n[0][LANG];
 
-    if(isEDRLRPresent===true || isQuartierPresent===true)    
-    {
+    if(isEDRLRPresent===true || isQuartierPresent===true) {
         for (var i = 0, il = idResults.length; i < il; i++) {
             var idResult = idResults[i];
             switch (idResult.layerId) {
@@ -253,48 +243,41 @@ function getRenoveRates(idResults) {
     }
     
     var income=$('#income').val();
-    if(income==null||income.length==0)
-    {
+    if(income==null||income.length==0) {
         //global msg
         rates = substitute(ratesI18n[0][LANG], prime_lower30K, prime_between30_60K, prime_upper60K);
     }
-    else
-    {
-    if(income>=30000)
-    {
-        if(income<=60000)
-        {
-            //income income>=30000 && income<=60000) 
-            rates = substitute(ratesI18n[2][LANG], prime_lower30K, prime_between30_60K, prime_upper60K);
+    else {
+        if(income>=30000) {
+            if(income<=60000) {
+                //income income>=30000 && income<=60000) 
+                rates = substitute(ratesI18n[2][LANG], prime_lower30K, prime_between30_60K, prime_upper60K);
+            }
+            else {
+                // income > 60000
+                rates = substitute(ratesI18n[3][LANG], prime_lower30K, prime_between30_60K, prime_upper60K);
+            }
         }
-        else
-        {
-            // income > 60000
-            rates = substitute(ratesI18n[3][LANG], prime_lower30K, prime_between30_60K, prime_upper60K);
+        else {
+            //income < 30k
+            rates = substitute(ratesI18n[1][LANG], prime_lower30K, prime_between30_60K, prime_upper60K);
         }
     }
-    else
-    {
-        //income < 30k
-        rates = substitute(ratesI18n[1][LANG], prime_lower30K, prime_between30_60K, prime_upper60K);
-    }
-    }
-    
 }
 
 //string substitution
 //elements to substitute: {0} {1} ...
 function substitute() {
- var args = substitute.arguments;
- var Base = args[0];
- var Seek,Len,ix1,ix2,ix3;
- for (ix1 = 1; ix1 < args.length; ix1++) {
-     ix2 = ix1 - 1;
-     Seek = '{' + ix2 + '}';
-     if ((ix3 = Base.indexOf(Seek)) > -1) {
-         Len = Seek.length;
-         Base = Base.substring(0, ix3) + args[ix1] + Base.substring(ix3 + Len);
-     }
- }
- return Base;
+    var args = substitute.arguments;
+    var Base = args[0];
+    var Seek,Len,ix1,ix2,ix3;
+    for (ix1 = 1; ix1 < args.length; ix1++) {
+        ix2 = ix1 - 1;
+        Seek = '{' + ix2 + '}';
+        if ((ix3 = Base.indexOf(Seek)) > -1) {
+            Len = Seek.length;
+            Base = Base.substring(0, ix3) + args[ix1] + Base.substring(ix3 + Len);
+        }
+    }
+    return Base;
 }

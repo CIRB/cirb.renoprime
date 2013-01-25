@@ -51,26 +51,31 @@ msgstr "http://www.logement.irisnet.be/fr/primes-et-aides/primes-facades"
 msgid "plus d'info"
 msgstr "Plus d'info"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:55
-#: cirb.renoprime:/browser/templates/renoview.pt:59
-msgid "Afficher les couches"
-msgstr "Afficher les couches"
-
-#: cirb.renoprime:/browser/templates/primeview.pt:56
-#: cirb.renoprime:/browser/templates/renoview.pt:60
-msgid "Contrats de quartiers actifs"
-msgstr "Contrats de quartiers actifs"
+#: cirb.renoprime:/browser/templates/primeview.pt:47
+#: cirb.renoprime:/browser/templates/renoview.pt:51
+msgid "La limite des revenus peut etre plus elevee selon l age et le menage."
+msgstr "La limite des revenus peut être plus élevée selon l’âge et le ménage."
 
 #: cirb.renoprime:/browser/templates/primeview.pt:57
 #: cirb.renoprime:/browser/templates/renoview.pt:61
+msgid "Afficher les couches"
+msgstr "Afficher les couches"
+
+#: cirb.renoprime:/browser/templates/primeview.pt:58
+#: cirb.renoprime:/browser/templates/renoview.pt:62
+msgid "Contrats de quartiers actifs"
+msgstr "Contrats de quartiers actifs"
+
+#: cirb.renoprime:/browser/templates/primeview.pt:59
+#: cirb.renoprime:/browser/templates/renoview.pt:63
 msgid "EDRLR"
 msgstr "EDRLR"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:58
+#: cirb.renoprime:/browser/templates/primeview.pt:60
 msgid "Espaces structurants"
 msgstr "Espaces structurants"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:59
+#: cirb.renoprime:/browser/templates/primeview.pt:61
 msgid "Zichee"
 msgstr "Zichee"
 

@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: Thu Jan 24 11:47:12 2013\n"
+"POT-Creation-Date: Fri Jan 25 09:31:57 2013\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope-dev@zope.org>\n"
@@ -78,26 +78,31 @@ msgstr ""
 msgid "plus d'info"
 msgstr ""
 
-#: cirb.renoprime:/browser/templates/primeview.pt:55
-#: cirb.renoprime:/browser/templates/renoview.pt:59
+#: cirb.renoprime:/browser/templates/primeview.pt:51
+#: cirb.renoprime:/browser/templates/renoview.pt:54
+msgid "La limite des revenus peut etre plus elevee selon l age et le menage."
+msgstr ""
+
+#: cirb.renoprime:/browser/templates/primeview.pt:62
+#: cirb.renoprime:/browser/templates/renoview.pt:64
 msgid "Afficher les couches"
 msgstr ""
 
-#: cirb.renoprime:/browser/templates/primeview.pt:56
-#: cirb.renoprime:/browser/templates/renoview.pt:60
+#: cirb.renoprime:/browser/templates/primeview.pt:63
+#: cirb.renoprime:/browser/templates/renoview.pt:65
 msgid "Contrats de quartiers actifs"
 msgstr ""
 
-#: cirb.renoprime:/browser/templates/primeview.pt:57
-#: cirb.renoprime:/browser/templates/renoview.pt:61
+#: cirb.renoprime:/browser/templates/primeview.pt:64
+#: cirb.renoprime:/browser/templates/renoview.pt:66
 msgid "EDRLR"
 msgstr ""
 
-#: cirb.renoprime:/browser/templates/primeview.pt:58
+#: cirb.renoprime:/browser/templates/primeview.pt:65
 msgid "Espaces structurants"
 msgstr ""
 
-#: cirb.renoprime:/browser/templates/primeview.pt:59
+#: cirb.renoprime:/browser/templates/primeview.pt:66
 msgid "Zichee"
 msgstr ""
 
