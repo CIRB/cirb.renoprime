@@ -48,7 +48,7 @@ $(document).ready(function() {
     wms_cirb_url = prefix_gis_url+"geoserver/wms";
 
     prefix_mybrugis_url = $('#map').data('mybrugisurl');
-    urlBrugis = prefix_mybrugis_url+"geoserver/ows"; 
+    urlBrugis = "/proxy/geoserver/ows"; 
 
     init();
 

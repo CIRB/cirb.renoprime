@@ -4,7 +4,7 @@ Changelog
 1.0.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Use a proxy_pass for brugis service.
 
 
 1.0.6 (2013-01-25)

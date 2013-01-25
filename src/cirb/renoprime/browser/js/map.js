@@ -14,7 +14,7 @@ var markers;
 
 var serie;
 
-var infoDateSerie = ["(La date de fin: ","(tot en met "];
+var infoDateSerie = ["(date de fin: ","(tot en met "];
 
 var event;
 
@@ -36,7 +36,7 @@ function init() {
 
     OpenLayers.Projection.defaults["EPSG:31370"]=options;
 
-    OpenLayers.ProxyHost="/proxy?";
+    //OpenLayers.ProxyHost="/proxy?";
 
     var urbis_options = {
         zoom: 2,
