@@ -43,9 +43,11 @@ $(document).ready(function() {
                 '-'+format_integer((currentDate.getDate()+1));
 
 
-    prefix_gis_url = $('#map').data('gisurl');                    
-    address_wb_url = prefix_gis_url+"service/urbis/Rest/Localize/getaddresses";
-    wms_cirb_url = prefix_gis_url+"geoserver/wms";
+    // prefix_gis_url = $('#map').data('gisurl');                    
+    // address_wb_url = prefix_gis_url+"service/urbis/Rest/Localize/getaddresses";
+    address_wb_url = "/gis/service/urbis/Rest/Localize/getaddresses";
+    //wms_cirb_url = prefix_gis_url+"geoserver/wms";
+    wms_cirb_url = "/gis/geoserver/wms";
 
     prefix_mybrugis_url = $('#map').data('mybrugisurl');
     urlBrugis = "/proxy/geoserver/ows"; 

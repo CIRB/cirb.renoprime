@@ -8,24 +8,22 @@
  */
 
 
-function geolocalize(AddresstoSearch,language,viewObject) {
-    $.post(address_wb_url, { language: language, address:AddresstoSearch },
-            function(data) {
-                viewObject.clear();
-                data=jQuery.parseJSON(data);
-                if(data.status=='success')  {
-                    viewObject.populate(data.result);
-                    var firstLink=$("#addressList").eq(0).children("tbody").eq(0).children("tr").eq(0).children("td").eq(0).children("a");
-                    if(firstLink!=null) {
-                        firstLink.click();
-                    }
-                }
-                else {
-                    //msg error to display
-                    viewObject.error(data);
-                }
+function geolocalize(AddresstoSearch, language, viewObject) {
+    $.post(address_wb_url, { language: language, address:AddresstoSearch }, function(data) {
+        viewObject.clear();
+        data=jQuery.parseJSON(data);
+        if(data.status=='success')  {
+            viewObject.populate(data.result);
+            var firstLink=$("#addressList").eq(0).children("tbody").eq(0).children("tr").eq(0).children("td").eq(0).children("a");
+            if(firstLink!=null) {
+                firstLink.click();
             }
-          );
+        }
+        else {
+            //msg error to display
+            viewObject.error(data);
+        }
+    });
 }
 
 function localize(x,y,map,msg) {

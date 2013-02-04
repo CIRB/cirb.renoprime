@@ -18,7 +18,7 @@
                 data-mybrugisurl view/get_brugis_url"></div>
 
             <div id="docs">
-                <form id="address_form" action=".">
+                <form id="address_form" name="address_form">
                     <div id="addressLocatorComponent"> 
                         <h3 i18n:translate="Recherche d'adresse">Recherche d'adresse</h3>   	
                         <fieldset>
