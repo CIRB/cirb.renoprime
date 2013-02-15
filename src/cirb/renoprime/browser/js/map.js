@@ -254,7 +254,7 @@ function init() {
                                     serie=serie.split("(")[1];
                                     serie="("+serie;
                                     */
-                                 serie=infoDateSerie[LANG]+tempDate.getDate()+"/"+(tempDate.getMonth()+1)+"/"+tempDate.getFullYear();
+                                 serie=infoDateSerie[LANG]+tempDate.getDate()+"/"+(tempDate.getMonth()+1)+"/"+tempDate.getFullYear()+")";
                              }                                       
                          }
 
