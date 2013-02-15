@@ -206,14 +206,18 @@ function getRenoveRates(idResults) {
     var ratesI18n = [];
     /*["Revenus inférieurs à 30000 € : {0}%, entre 30000 et 60000€ : {1}%, revenus supérieurs à 60000€ : {2}%",
         "Inkomen lager dan 30000€ : {0}%, tussen 30000 en 60000€ : {1}%, inkomen hoger dan 60000€ : {2}%"];*/
-    ratesI18n[0] = ["Revenus inférieurs à 30000 € : {0}%,<br>entre 30000 et 60000€ : {1}%,<br>revenus supérieurs à 60000€ : {2}%",
-                    "Inkomen lager dan 30000€ : {0}%,<br>tussen 30000 en 60000€ : {1}%,<br>inkomen hoger dan 60000€ : {2}%"];
-    ratesI18n[1] = ["Revenus inférieurs à 30000 € : {0}%",
-                        "Inkomen lager dan 30000€ : {0}%"];
-    ratesI18n[2] = ["Revenus entre 30000 et 60000€ : {1}%",
-                    "Inkomen tussen 30000 en 60000€ : {1}%"];
-    ratesI18n[3] = ["Revenus supérieurs à 60000€ : {2}%",
-                    "Inkomen inkomen hoger dan 60000€ : {2}%"];
+    lower_income_min = 33525.36;
+    lower_income_max = 67050.72;
+
+    ratesI18n[0] = ["Revenus inférieurs à "+floatToFrString(lower_income_min)+" € : {0}%,<br>entre "+floatToFrString(lower_income_min)+" et "+floatToFrString(lower_income_max)+
+                    " € : {1}%,<br>revenus supérieurs à "+floatToFrString(lower_income_max)+" € : {2}%",
+                    "Inkomen lager dan "+floatToFrString(lower_income_min)+" € : {0}%,<br>tussen "+floatToFrString(lower_income_min)+" en "+floatToFrString(lower_income_max)+" € : {1}%,<br>inkomen hoger dan "+floatToFrString(lower_income_max)+" € : {2}%"];
+    ratesI18n[1] = ["Revenus inférieurs à "+lower_income_min+" € : {0}%",
+                        "Inkomen lager dan "+lower_income_min+" € : {0}%"];
+    ratesI18n[2] = ["Revenus entre "+floatToFrString(lower_income_min)+" et "+floatToFrString(lower_income_max)+" € : {1}%",
+                    "Inkomen tussen "+floatToFrString(lower_income_min)+" en "+floatToFrString(lower_income_max)+" € : {1}%"];
+    ratesI18n[3] = ["Revenus supérieurs à "+floatToFrString(lower_income_max)+" € : {2}%",
+                    "Inkomen inkomen hoger dan "+floatToFrString(lower_income_max)+" € : {2}%"];
     localisation = localisationI18n[0][LANG];
     zone = zoneI18n[0][LANG];
 
@@ -248,8 +252,8 @@ function getRenoveRates(idResults) {
         rates = substitute(ratesI18n[0][LANG], prime_lower30K, prime_between30_60K, prime_upper60K);
     }
     else {
-        if(income>=30000) {
-            if(income<=60000) {
+        if(income>=lower_income_min) {
+            if(income<=lower_income_max) {
                 //income income>=30000 && income<=60000) 
                 rates = substitute(ratesI18n[2][LANG], prime_lower30K, prime_between30_60K, prime_upper60K);
             }
@@ -280,4 +284,30 @@ function substitute() {
         }
     }
     return Base;
+}
+
+function floatToFrString(number) {
+    thousand_sep = '.';
+    decimal_sep = ',';
+    if (typeof(number) != "number"){return;}
+    str_num = number.toString()
+    if (str_num.length == 1){ 
+        return createBase(str_num, thousand_sep);
+    }
+    base = str_num.split('.')[0];
+    dec = str_num.split('.')[1];
+
+    mod = base.length > 3 ? base.length % 3 : 0;
+
+    printed_num = createBase(base, thousand_sep);
+    printed_num += decimal_sep+dec;
+    return printed_num;
+}
+
+function createBase (base, sep) {
+    if (typeof(base) != "string") {return;}
+    mod = base.length > 3 ? base.length % 3 : 0;
+    formated_base = mod ? base.substr(0, mod) + thousand_sep : "";
+    formated_base += base.substr(mod).replace(/(\d{3})(?=\d)/g, "$1" + thousand_sep);
+    return formated_base;
 }

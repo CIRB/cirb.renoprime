@@ -71,7 +71,7 @@ msgstr "Actieve wijkcontracten"
 #: cirb.renoprime:/browser/templates/primeview.pt:64
 #: cirb.renoprime:/browser/templates/renoview.pt:66
 msgid "EDRLR"
-msgstr "RBOHR"
+msgstr "RVOHR"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:65
 msgid "Espaces structurants"
