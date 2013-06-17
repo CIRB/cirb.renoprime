@@ -47,7 +47,7 @@ $(document).ready(function() {
     // address_wb_url = prefix_gis_url+"service/urbis/Rest/Localize/getaddresses";
     address_wb_url = "/gis/service/urbis/Rest/Localize/getaddresses";
     //wms_cirb_url = prefix_gis_url+"geoserver/wms";
-    wms_cirb_url = "/gis/geoserver/wms";
+    wms_cirb_url = "/gis/geoserver/gwc/service/wms";
 
     prefix_mybrugis_url = $('#map').data('mybrugisurl');
     urlBrugis = "/proxy/geoserver/ows"; 
