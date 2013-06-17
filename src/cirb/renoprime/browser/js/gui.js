@@ -24,13 +24,19 @@ $(document).ready(function(){
 
     addressGUI.populate=function(data) {
         var items="";   
-        var noresultI18n = ["Pas de résultats trouvés", "Geen resultaten gevonden"];
-
+        var noresultI18n = ["Pas de r&eacute;sultats trouv&eacute;s", "Geen resultaten gevonden"];
+        var header=["S&eacute;lectionnez une des adresses trouv&eacute;es :<br />",
+            "Selecteer een van de gevonden adressen:<br />"];
         if(data && data.length>0) {
             //var htmlText = "<table class='ResultTable'>";
-
+            items=header[LANG];
             for(var i=0;i<data.length;i=i+1) {
-                var textR=data[i].address.number+','+data[i].address.street.name+' '+data[i].address.street.postCode+' '+data[i].address.street.municipality;
+                var textR="";
+                number = data[i].address.number;
+                if (number != ""){
+                    textR = number+", ";
+                }
+                textR=textR+data[i].address.street.name+' '+data[i].address.street.postCode+' '+data[i].address.street.municipality;
                 var text="<tr> <td> <a href='#" +i+"' onClick='localize("+data[i].point.x+','+data[i].point.y+",map,null);'>";
                 items=items+text+textR+'</td> </tr>';
 
@@ -49,7 +55,7 @@ $(document).ready(function(){
 
 
     addressGUI.error=function(error) {
-        var noresultI18n = ["Pas de résultats trouvés", "Geen resultaten gevonden"];
+        var noresultI18n = ["Pas de r&eacute;sultats trouv&eacute;s", "Geen resultaten gevonden"];
 
         this.html(noresultI18n[LANG]);
     };
