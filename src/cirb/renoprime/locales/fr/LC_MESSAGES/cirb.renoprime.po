@@ -1,3 +1,10 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: Mon Jun 17 16:28:57 2013\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
 #: cirb.renoprime:/browser/mapview.py:45
 msgid "a dummy string"
 msgstr ""
@@ -22,64 +29,70 @@ msgstr "Votre adresse (obligatoire)"
 msgid "Rechercher"
 msgstr "Rechercher"
 
+#. Default: ""
 #: cirb.renoprime:/browser/templates/primeview.pt:32
 #: cirb.renoprime:/browser/templates/renoview.pt:36
+msgid "selectionnezunedesadresses"
+msgstr "Sélectionnez une des adresses trouvées :"
+
+#: cirb.renoprime:/browser/templates/primeview.pt:33
+#: cirb.renoprime:/browser/templates/renoview.pt:37
 msgid "liste d'adresses si plusieurs"
 msgstr "Liste d'adresses (si plusieurs)"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:35
-#: cirb.renoprime:/browser/templates/renoview.pt:39
+#: cirb.renoprime:/browser/templates/primeview.pt:36
+#: cirb.renoprime:/browser/templates/renoview.pt:40
 msgid "Taux de la prime"
 msgstr "Taux de la prime"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:40
-#: cirb.renoprime:/browser/templates/renoview.pt:44
+#: cirb.renoprime:/browser/templates/primeview.pt:41
+#: cirb.renoprime:/browser/templates/renoview.pt:45
 msgid "Type de zone *"
 msgstr "Type de zone"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:44
-#: cirb.renoprime:/browser/templates/renoview.pt:48
+#: cirb.renoprime:/browser/templates/primeview.pt:45
+#: cirb.renoprime:/browser/templates/renoview.pt:49
 msgid "Taux de la prime :"
 msgstr "Taux de la prime :"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:45
+#: cirb.renoprime:/browser/templates/primeview.pt:52
 msgid "http://www.logement.irisnet.be/fr/primes-et-aides/primes-facades"
 msgstr "http://www.logement.irisnet.be/fr/primes-et-aides/primes-facades"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:45
-#: cirb.renoprime:/browser/templates/renoview.pt:49
+#: cirb.renoprime:/browser/templates/primeview.pt:52
+#: cirb.renoprime:/browser/templates/renoview.pt:54
 msgid "plus d'info"
 msgstr "Plus d'info"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:47
-#: cirb.renoprime:/browser/templates/renoview.pt:51
+#: cirb.renoprime:/browser/templates/primeview.pt:57
+#: cirb.renoprime:/browser/templates/renoview.pt:59
 msgid "La limite des revenus peut etre plus elevee selon l age et le menage."
 msgstr "La limite des revenus peut être plus élevée selon l’âge et le ménage."
 
-#: cirb.renoprime:/browser/templates/primeview.pt:57
-#: cirb.renoprime:/browser/templates/renoview.pt:61
+#: cirb.renoprime:/browser/templates/primeview.pt:68
+#: cirb.renoprime:/browser/templates/renoview.pt:68
 msgid "Afficher les couches"
 msgstr "Afficher les couches"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:58
-#: cirb.renoprime:/browser/templates/renoview.pt:62
+#: cirb.renoprime:/browser/templates/primeview.pt:69
+#: cirb.renoprime:/browser/templates/renoview.pt:69
 msgid "Contrats de quartiers actifs"
 msgstr "Contrats de quartiers actifs"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:59
-#: cirb.renoprime:/browser/templates/renoview.pt:63
+#: cirb.renoprime:/browser/templates/primeview.pt:70
+#: cirb.renoprime:/browser/templates/renoview.pt:70
 msgid "EDRLR"
 msgstr "EDRLR"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:60
+#: cirb.renoprime:/browser/templates/primeview.pt:71
 msgid "Espaces structurants"
 msgstr "Espaces structurants"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:61
+#: cirb.renoprime:/browser/templates/primeview.pt:72
 msgid "Zichee"
 msgstr "Zichee"
 
-#: cirb.renoprime:/browser/templates/renoview.pt:49
+#: cirb.renoprime:/browser/templates/renoview.pt:54
 msgid "http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation"
 msgstr "http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation"
 
