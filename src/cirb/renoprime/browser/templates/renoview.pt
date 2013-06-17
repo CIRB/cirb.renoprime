@@ -20,7 +20,7 @@
             <div id="docs">            
                 <form id="address_form" name="address_form" class="address_form" onsubmit="return false;">
                     <div id="addressLocatorComponent"> 
-                        <h3 i18n:translate="Recherche d'adresse">Recherche d'adresse</h3>	
+                        <label for="address" id="findaddress" i18n:translate="Recherche d'adresse">Recherche d'adresse</label>	
                         <fieldset>
                             <legend i18n:translate="Adresse">Adresse</legend>
                             <input name="address" id="address" type="text" i18n:attributes="placeholder votreadresse(obligatoire)..." />
@@ -45,10 +45,13 @@
                                 <td id="ratesZone" class="TableauInfo"></td>
                             </tr>
                             <tr>
-                                <td valign="top" class="TableauTitre"><tal:block i18n:translate="Taux de la prime :">Taux de la prime :</tal:block><br><br>
-                                    <a i18n:attributes="href http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation" i18n:translate="plus d'info">plus d'info</a>    
+                                <td valign="top" class="TableauTitre"><tal:block i18n:translate="Taux de la prime :">Taux de la prime :</tal:block></td>
+                                <td valign="top" id="ratesInfo" class="TableauInfo"> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"> 
+                                <a i18n:attributes="href http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation" i18n:translate="plus d'info">plus d'info</a> 
                                 </td>
-                                <td colspan="2" valign="top" id="ratesInfo" class="TableauInfo"> </td>
                             </tr>
                             <tr>
                                 <!--td id="ratesNote" class="Note" colspan="2"> </td-->
