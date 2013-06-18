@@ -4,13 +4,9 @@ Changelog
 1.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
-
-1.1.0 (2013-06-17)
-------------------
-
-- Nothing changed yet.
+- Update proxy url
+- Update some Anysufer changes
+- Update translations
 
 
 1.0.10 (2013-02-15)

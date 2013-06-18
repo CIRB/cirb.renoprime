@@ -1,5 +1,6 @@
- msgid ""
- msgstr ""
+msgid ""
+msgstr ""
+"POT-Creation-Date: Mon Jun 17 16:28:57 2013\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
