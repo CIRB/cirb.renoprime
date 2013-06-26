@@ -12,11 +12,6 @@
 
             <div id="text_above_map" tal:content="structure context/getText_above_map"></div>
 
-            <div style="width:650px; height:650px" id="map"
-                tal:attributes="data-today view/get_today;
-                data-gisurl view/get_gis_url;
-                data-mybrugisurl view/get_brugis_url"></div>
-
             <div id="docs">            
                 <form id="address_form" name="address_form" class="address_form" onsubmit="return false;">
                     <div id="addressLocatorComponent"> 
@@ -73,6 +68,11 @@
                 </div>
             </form>
         </div> 
+        
+        <div style="width:650px; height:650px" id="map"
+                tal:attributes="data-today view/get_today;
+                data-gisurl view/get_gis_url;
+                data-mybrugisurl view/get_brugis_url"></div>
 
         <div id="text_below_map" tal:content="structure context/getText_below_map"></div>
 
