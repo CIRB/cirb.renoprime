@@ -4,7 +4,7 @@ Changelog
 1.1.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Changed order of #map and #docs for AnySurfer reasons.
 
 
 1.1.2 (2013-06-18)
