@@ -4,7 +4,7 @@ Changelog
 1.1.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update translations.
 
 
 1.1.4 (2013-07-10)
