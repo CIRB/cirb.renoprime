@@ -36,7 +36,7 @@
                     <table id=resultTable>
                         <tbody>
                             <tr>
-                                <td class="TableauTitre" i18n:translate="Recherche pour l'adresse :" colspan="2">Recherche pour l'adresse :</td>
+                                <td class="TableauTitre" i18n:translate="Resultat pour l'adresse :" colspan="2">Resultat pour l'adresse :</td>
                             </tr>
                             <tr>
                                 <td colspan="2" id="ratesAddress"></td>
