@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: Mon Jun 17 16:28:57 2013\n"
+"POT-Creation-Date: Wed Jul 10 09:17:14 2013\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -29,70 +29,69 @@ msgstr "Votre adresse (obligatoire)"
 msgid "Rechercher"
 msgstr "Rechercher"
 
-#. Default: ""
 #: cirb.renoprime:/browser/templates/primeview.pt:32
 #: cirb.renoprime:/browser/templates/renoview.pt:36
-msgid "selectionnezunedesadresses"
-msgstr "Sélectionnez une des adresses trouvées :"
-
-#: cirb.renoprime:/browser/templates/primeview.pt:33
-#: cirb.renoprime:/browser/templates/renoview.pt:37
 msgid "liste d'adresses si plusieurs"
 msgstr "Liste d'adresses (si plusieurs)"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:36
-#: cirb.renoprime:/browser/templates/renoview.pt:40
+#: cirb.renoprime:/browser/templates/primeview.pt:35
+#: cirb.renoprime:/browser/templates/renoview.pt:39
 msgid "Taux de la prime"
 msgstr "Taux de la prime"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:41
-#: cirb.renoprime:/browser/templates/renoview.pt:45
+#: cirb.renoprime:/browser/templates/primeview.pt:40
+#: cirb.renoprime:/browser/templates/renoview.pt:44
+msgid "Recherche pour l'adresse :"
+msgstr "Recherche pour l'adresse :"
+
+#: cirb.renoprime:/browser/templates/primeview.pt:48
+#: cirb.renoprime:/browser/templates/renoview.pt:51
 msgid "Type de zone *"
 msgstr "Type de zone"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:45
-#: cirb.renoprime:/browser/templates/renoview.pt:49
+#: cirb.renoprime:/browser/templates/primeview.pt:52
+#: cirb.renoprime:/browser/templates/renoview.pt:55
 msgid "Taux de la prime :"
 msgstr "Taux de la prime :"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:52
+#: cirb.renoprime:/browser/templates/primeview.pt:59
 msgid "http://www.logement.irisnet.be/fr/primes-et-aides/primes-facades"
 msgstr "http://www.logement.irisnet.be/fr/primes-et-aides/primes-facades"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:52
-#: cirb.renoprime:/browser/templates/renoview.pt:54
+#: cirb.renoprime:/browser/templates/primeview.pt:59
+#: cirb.renoprime:/browser/templates/renoview.pt:60
 msgid "plus d'info"
 msgstr "Plus d'info"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:57
-#: cirb.renoprime:/browser/templates/renoview.pt:59
+#: cirb.renoprime:/browser/templates/primeview.pt:64
+#: cirb.renoprime:/browser/templates/renoview.pt:65
 msgid "La limite des revenus peut etre plus elevee selon l age et le menage."
 msgstr "La limite des revenus peut être plus élevée selon l’âge et le ménage."
 
-#: cirb.renoprime:/browser/templates/primeview.pt:68
-#: cirb.renoprime:/browser/templates/renoview.pt:68
+#: cirb.renoprime:/browser/templates/primeview.pt:75
+#: cirb.renoprime:/browser/templates/renoview.pt:74
 msgid "Afficher les couches"
 msgstr "Afficher les couches"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:69
-#: cirb.renoprime:/browser/templates/renoview.pt:69
+#: cirb.renoprime:/browser/templates/primeview.pt:76
+#: cirb.renoprime:/browser/templates/renoview.pt:75
 msgid "Contrats de quartiers actifs"
 msgstr "Contrats de quartiers actifs"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:70
-#: cirb.renoprime:/browser/templates/renoview.pt:70
+#: cirb.renoprime:/browser/templates/primeview.pt:77
+#: cirb.renoprime:/browser/templates/renoview.pt:76
 msgid "EDRLR"
 msgstr "EDRLR"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:71
+#: cirb.renoprime:/browser/templates/primeview.pt:78
 msgid "Espaces structurants"
 msgstr "Espaces structurants"
 
-#: cirb.renoprime:/browser/templates/primeview.pt:72
+#: cirb.renoprime:/browser/templates/primeview.pt:79
 msgid "Zichee"
 msgstr "Zichee"
 
-#: cirb.renoprime:/browser/templates/renoview.pt:54
+#: cirb.renoprime:/browser/templates/renoview.pt:60
 msgid "http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation"
 msgstr "http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation"
 
@@ -105,3 +104,6 @@ msgstr "Texte au-dessus de la carte"
 #: cirb.renoprime:/content/renoprime.py:48
 msgid "label_below_map"
 msgstr "Texte en-dessous de la carte"
+
+#~ msgid "selectionnezunedesadresses"
+#~ msgstr "Sélectionnez une des adresses trouvées :"
