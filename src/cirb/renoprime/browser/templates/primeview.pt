@@ -12,10 +12,6 @@
  
             <div id="text_above_map" tal:content="structure context/getText_above_map"></div>
 
-            <div style="width:650px; height:650px" id="map" 
-                tal:attributes="data-today view/get_today;
-                data-gisurl view/get_gis_url;
-                data-mybrugisurl view/get_brugis_url"></div>
 
             <div id="docs">
                 <form id="address_form" name="address_form">
@@ -55,18 +51,17 @@
                                     <td valign="top" id="ratesInfo" class="TableauInfo"> </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">
-                                    <a i18n:attributes="href http://www.logement.irisnet.be/fr/primes-et-aides/primes-facades" i18n:translate="plus d'info">plus d'info</a>
-                                    </td>
-                                </tr>
-                                <tr>
                                     <!--td id="ratesNote" class="Note" colspan="2"> </td-->
                                     <td id="subtable" class="subtable" colspan="2" i18n:translate="La limite des revenus peut etre plus elevee selon l age et le menage.">
                                         La limite des revenus peut etre plus elevee selon l age et le menage.
                                     </td>
-
-
                                 </tr>
+                                <tr>
+                                    <td colspan="2">
+                                    <a i18n:attributes="href http://www.logement.irisnet.be/fr/primes-et-aides/primes-facades" i18n:translate="plus d'info">plus d'info</a>
+                                    </td>
+                                </tr>
+
                             </tbody>
                         </table>    	  	
                     </div>
@@ -81,6 +76,11 @@
                     </div>
                 </form>
             </div> 
+            
+            <div style="width:650px; height:650px" id="map" 
+                tal:attributes="data-today view/get_today;
+                data-gisurl view/get_gis_url;
+                data-mybrugisurl view/get_brugis_url"></div>
 
             <div id="text_below_map" tal:content="structure context/getText_below_map"></div>
 
