@@ -42,7 +42,7 @@ msgstr "Percentage van de tussenkomst"
 #: cirb.renoprime:/browser/templates/primeview.pt:36
 #: cirb.renoprime:/browser/templates/renoview.pt:39
 msgid "Resultat pour l'adresse :"
-msgstr "Resultaal voor het adres:"
+msgstr "Resultaat voor het adres:"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:44
 #: cirb.renoprime:/browser/templates/renoview.pt:46
