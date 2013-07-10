@@ -4,7 +4,7 @@
  * File: renove3.0.js
  *
  * @author fkrzewinski@cirb.irisnet.be inspired by the work of Jean-Paul Dzisiak
- * @version november 2012                                             
+ * @version november 2012
  */
 
 
@@ -12,7 +12,7 @@ var map, lyrUrbIS, lyrRates;
 
 
 // Rates results
-var zone, rates, localisation, embelisOutzone;
+var zone, rates, localisation, embelisOutzone, ratesAddress;
 
 
 // PRIME A L'EMBELLISSEMENT
@@ -64,17 +64,18 @@ function populateAccordion(idResults) {
         if (embelisOutzone) {
             noteI18nMsg = noteI18nMsg + noteExtraI18n[LANG];
         }
-    } 
+    }
     else {
         getRenoveRates(idResults);
     }
+    //ratesAddress = "bsuttor";
 
     $('#ratesLoc').html('<p></p>');
     $("#ratesZone").text(zone);
     $("#ratesInfo").html(rates);
     $("#ratesNote").text(noteI18nMsg);
     $("#infoURL").text(infoURLI18n[LANG]);
-  
+
 }
 
 /*
@@ -109,7 +110,7 @@ function getEmbellisRates(idResults) {
     // displayed geolocalized rates
     var ratesI18n = [];
     ratesI18n[0] = ["Revenus inférieurs à 40.000€ : {0}%, supérieurs à 40.000€ : {1}%",
-        "Inkomen lager dan 40.000€ : {0}%, hoger dan 40.000€ : {1}%"];    
+        "Inkomen lager dan 40.000€ : {0}%, hoger dan 40.000€ : {1}%"];
     ratesI18n[1]=["Revenus inférieurs à 40.000€ : {0}%","Inkomen lager dan 40.000€ : {0}%"];
     ratesI18n[2]=["Revenus supérieurs à 40.000€ : {1}%","Inkomen hoger dan 40.000€ : {1}%"];
 
@@ -157,20 +158,20 @@ function getEmbellisRates(idResults) {
                 break;
         }
     }
-    
-    
+
+
     var income=$('#income').val();
     if(income==null||income.length==0) {
-        //global msg        
+        //global msg
         rates = substitute(ratesI18n[0][LANG], prime_lower40K, prime_upper40K);
     }
     else {
         if(income>40000) {
-            // income > 40000           
+            // income > 40000
             rates = substitute(ratesI18n[2][LANG], prime_lower40K, prime_upper40K);
         }
         else {
-            // income <= 40000      
+            // income <= 40000
             rates = substitute(ratesI18n[1][LANG], prime_lower40K, prime_upper40K);
         }
     }
@@ -245,7 +246,7 @@ function getRenoveRates(idResults) {
         }
         //rates = substitute(ratesI18n[LANG], prime_lower30K, prime_between30_60K, prime_upper60K);
     }
-    
+
     var income=$('#income').val();
     if(income==null||income.length==0) {
         //global msg
@@ -254,7 +255,7 @@ function getRenoveRates(idResults) {
     else {
         if(income>=lower_income_min) {
             if(income<=lower_income_max) {
-                //income income>=30000 && income<=60000) 
+                //income income>=30000 && income<=60000)
                 rates = substitute(ratesI18n[2][LANG], prime_lower30K, prime_between30_60K, prime_upper60K);
             }
             else {
@@ -291,7 +292,7 @@ function floatToFrString(number) {
     decimal_sep = ',';
     if (typeof(number) != "number"){return;}
     str_num = number.toString()
-    if (str_num.length == 1){ 
+    if (str_num.length == 1){
         return createBase(str_num, thousand_sep);
     }
     base = str_num.split('.')[0];

@@ -23,7 +23,7 @@ $(document).ready(function(){
     };
 
     addressGUI.populate=function(data) {
-        var items="";   
+        var items="";
         var noresultI18n = ["Pas de r&eacute;sultats trouv&eacute;s", "Geen resultaten gevonden"];
         var header=["S&eacute;lectionnez une des adresses trouv&eacute;es :<br />",
             "Selecteer een van de gevonden adressen:<br />"];
@@ -37,7 +37,7 @@ $(document).ready(function(){
                     textR = number+", ";
                 }
                 textR=textR+data[i].address.street.name+' '+data[i].address.street.postCode+' '+data[i].address.street.municipality;
-                var text="<tr> <td> <a href='#" +i+"' onClick='localize("+data[i].point.x+','+data[i].point.y+",map,null);'>";
+                var text="<tr> <td> <a href=\"#"+i+"\" onClick=\"localize_with_addess("+data[i].point.x+","+data[i].point.y+",map,\'"+textR+"\');\">";
                 items=items+text+textR+'</td> </tr>';
 
             }

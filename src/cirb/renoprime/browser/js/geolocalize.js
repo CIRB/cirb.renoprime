@@ -4,7 +4,7 @@
  * File: geolocalize.js
  *
  * @author fkrzewinski@cirb.irisnet.be inspired by the work of Jean-Paul Dzisiak
- * @version november 2012                                             
+ * @version november 2012
  */
 
 
@@ -35,7 +35,7 @@ function localize(x,y,map,msg) {
     markers.clearMarkers();
 
     markers.addMarker(new OpenLayers.Marker(new OpenLayers.LonLat(x,y),icon));
-    //requesting which layers are present at x y, so we emulate a click on a map with the info control WMSGetFeatureInfo 
+    //requesting which layers are present at x y, so we emulate a click on a map with the info control WMSGetFeatureInfo
 
     /*
        clickPosition  {OpenLayers.Pixel} The position on the map where the mouse event occurred.
@@ -44,4 +44,9 @@ function localize(x,y,map,msg) {
 
     info.request(map.getViewPortPxFromLonLat(map.getCenter()) );
 
+}
+
+function localize_with_addess(x, y, map, msg) {
+    localize(x, y, map, msg);
+    $('#ratesAddress').html(msg);
 }
