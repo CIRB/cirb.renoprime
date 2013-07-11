@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.1.7 (unreleased)
+1.1.7 (2013-07-11)
 ------------------
 
 - Update gis url, prevent 404 error.
