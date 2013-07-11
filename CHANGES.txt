@@ -4,7 +4,7 @@ Changelog
 1.1.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update gis url, prevent 404 error.
 
 
 1.1.5 (2013-07-10)
