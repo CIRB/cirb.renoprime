@@ -9,13 +9,13 @@ var language=["FR","NL"];
 
 var isoCurrentDate='';
 var isoLowerDate='';
- 
+
 function format_integer(num) {
     var res=''+num;
     if(res.length<2)
         return res='0'+res;
     else
-        return res; 
+        return res;
 }
 
 
@@ -29,10 +29,10 @@ $(document).ready(function() {
     } else {
         LANG = 0;
     }
-    
-    today = $('#map').data('today');                    
+
+    today = $('#map').data('today');
     currentDate=new Date(today);
-    
+
     isoCurrentDate=currentDate.getFullYear()+
                 '-'+format_integer((currentDate.getMonth()+1))+
                 '-'+format_integer(currentDate.getDate());
@@ -43,14 +43,14 @@ $(document).ready(function() {
                 '-'+format_integer((currentDate.getDate()+1));
 
 
-    // prefix_gis_url = $('#map').data('gisurl');                    
+    // prefix_gis_url = $('#map').data('gisurl');
     // address_wb_url = prefix_gis_url+"service/urbis/Rest/Localize/getaddresses";
     address_wb_url = "/gis/service/urbis/Rest/Localize/getaddresses";
     //wms_cirb_url = prefix_gis_url+"geoserver/wms";
     wms_cirb_url = "/gis/geoserver/gwc/service/wms";
 
     prefix_mybrugis_url = $('#map').data('mybrugisurl');
-    urlBrugis = "/proxy/geoserver/ows"; 
+    urlBrugis = "/proxy/geoserver/ows";
 
     init();
 
