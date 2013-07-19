@@ -23,40 +23,49 @@ $(document).ready(function(){
     };
 
     addressGUI.populate=function(data) {
-        var items="";
-        var noresultI18n = ["Pas de r&eacute;sultats trouv&eacute;s", "Geen resultaten gevonden"];
-        var header=["S&eacute;lectionnez une des adresses trouv&eacute;es :<br />",
-            "Selecteer een van de gevonden adressen:<br />"];
+        var HTMLtable = "";
+        var noresultI18n = ["<br />Pas de r&eacute;sultats trouv&eacute;s", "Geen resultaten gevonden"];
+        var header=["<br />S&eacute;lectionnez une des adresses trouv&eacute;es :<br />",
+            "<br />Selecteer een van de gevonden adressen:<br />"];
         if(data && data.length>0) {
-            //var htmlText = "<table class='ResultTable'>";
-            items=header[LANG];
-            for(var i=0;i<data.length;i=i+1) {
-                var textR="";
+            HTMLtable = header[LANG];
+            HTMLtable = HTMLtable.concat("<table id='addressList'>");
+            for(var i=0; i<data.length; i=i+1) {
+                var address = "";
                 number = data[i].address.number;
                 if (number != ""){
-                    textR = number+", ";
+                    address = number+", ";
                 }
-                textR=textR+data[i].address.street.name+' '+data[i].address.street.postCode+' '+data[i].address.street.municipality;
-                var text="<tr> <td> <a href=\"#"+i+"\" onClick=\"localize_with_addess("+data[i].point.x+","+data[i].point.y+",map,\'"+textR+"\');\">";
-                items=items+text+textR+'</td> </tr>';
-
+                street = data[i].address.street.name;
+                postcode = data[i].address.street.postCode;
+                municipality = data[i].address.street.municipality;
+                x = data[i].point.x;
+                y = data[i].point.y;
+                address = address.concat(street, ' ', postcode, ' ', municipality);
+                HTMLtable = HTMLtable.concat(
+                    "<tr><td><a href=\"#",
+                    i,
+                    "\" onclick=\"localize_with_addess(",
+                    x,
+                    ",",
+                    y,
+                    ",map,\'",
+                    escape(address),
+                    "\');\">");
+                HTMLtable = HTMLtable.concat(address, '</a></td></tr>');
             }
-            //htmlText = htmlText+items+ "</table>";
-            //items=htmlText;
+            HTMLtable = HTMLtable.concat("</table>");
         }
         else {
-            items=noresultI18n[LANG];
+            HTMLtable = noresultI18n[LANG];
         }
-
-
-        var result=this;
-        result.html(items);
+        //var result=this;
+        this.replaceWith(HTMLtable);
     };
 
 
     addressGUI.error=function(error) {
         var noresultI18n = ["Pas de r&eacute;sultats trouv&eacute;s", "Geen resultaten gevonden"];
-
         this.html(noresultI18n[LANG]);
     };
 
