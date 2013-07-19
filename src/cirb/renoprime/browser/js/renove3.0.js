@@ -68,7 +68,6 @@ function populateAccordion(idResults) {
     else {
         getRenoveRates(idResults);
     }
-    //ratesAddress = "bsuttor";
 
     $('#ratesLoc').html('<p></p>');
     $("#ratesZone").text(zone);

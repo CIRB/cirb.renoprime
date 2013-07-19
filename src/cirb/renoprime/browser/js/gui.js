@@ -8,11 +8,12 @@
  */
 
 var addressGUI;
+var addressValue;
 
 function doSearch() {
     //show loading page
-    var addressValue=$('#address').val();
-    geolocalize(addressValue,language[LANG],addressGUI);
+    addressValue = $('#address').val();
+    geolocalize(addressValue, language[LANG], addressGUI);
 }
 
 $(document).ready(function(){
@@ -59,7 +60,6 @@ $(document).ready(function(){
         else {
             HTMLtable = noresultI18n[LANG];
         }
-        //var result=this;
         this.replaceWith(HTMLtable);
     };
 

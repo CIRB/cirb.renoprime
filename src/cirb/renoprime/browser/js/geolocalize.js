@@ -8,8 +8,8 @@
  */
 
 
-function geolocalize(AddresstoSearch, language, viewObject) {
-    $.post(address_wb_url, { language: language, address:AddresstoSearch }, function(data) {
+function geolocalize(addressValue, language, viewObject) {
+    $.get(address_wb_url, { language: language, address:addressValue }, function(data) {
         viewObject.clear();
         data=jQuery.parseJSON(data);
         if(data.status=='success')  {
