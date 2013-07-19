@@ -48,5 +48,5 @@ function localize(x,y,map,msg) {
 
 function localize_with_addess(x, y, map, msg) {
     localize(x, y, map, msg);
-    $('#ratesAddress').html(msg);
+    $('#ratesAddress').html(unescape(msg));
 }
