@@ -12,8 +12,7 @@
             <title>Brugis URL</title>
             <description>Url used to My Brugis connection</description>
         </field>
-        <value>http://www.mybrugis.irisnet.be/</value>
+        <value>http://mybrugis.irisnet.be/</value>
     </record>
-
 </registry>
 
