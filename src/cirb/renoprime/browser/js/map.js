@@ -119,7 +119,7 @@ function init() {
             );
 
     layer_batiment=new OpenLayers.Layer.WMS("Batiment Urbis",
-            "/gis/geoserver/ows",
+            prefix_gis_url+"geoserver/ows",
             {'layers': 'urbis:URB_A_BU', transparent: true, format: 'image/png',visible:false},
             {isBaseLayer: false,visible:false}
             );
@@ -145,8 +145,8 @@ function init() {
                 urlBrugis,
                 {   layers: 'Espaces_structurants',
                     version:'1.3.0',
-                                   transparent: "true",
-                                   format: 'image/png'
+                    transparent: "true",
+                    format: 'image/png'
                 },
                 {isBaseLayer: false}
                 );
