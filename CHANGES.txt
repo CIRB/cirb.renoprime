@@ -1,10 +1,12 @@
 Changelog
 =========
 
-1.1.10 (unreleased)
+1.1.10 (2013-12-03)
 -------------------
 
-- Nothing changed yet.
+- Update mybrugis ws url.
+- Don't use proxy to call CIRB geoserver.
+- Add Authorization in proxy dev conf (in buildout.cfg) for mybugis
 
 
 1.1.9 (2013-07-19)
