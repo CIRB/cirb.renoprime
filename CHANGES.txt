@@ -4,7 +4,7 @@ Changelog
 1.1.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add javascript for ie9 and cors domain.
 
 
 1.1.10 (2013-12-03)
