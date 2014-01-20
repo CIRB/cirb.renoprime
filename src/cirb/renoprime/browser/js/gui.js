@@ -18,10 +18,6 @@ function doSearch() {
 
 $(document).ready(function(){
     addressGUI=$('#addressList');
-    addressGUI.clear=function()
-    {
-
-    };
 
     addressGUI.populate=function(data) {
         var HTMLtable = "";
@@ -68,11 +64,6 @@ $(document).ready(function(){
         var noresultI18n = ["Pas de r&eacute;sultats trouv&eacute;s", "Geen resultaten gevonden"];
         this.html(noresultI18n[LANG]);
     };
-
-    $('#address_form').submit( function(){
-        doSearch();
-        return false;
-    });
 
     $('#contrats').change(function() {
         layer.setVisibility(this.checked);

@@ -28,6 +28,12 @@ function format_integer(num) {
 
 function init() {
 
+    $('#address_form').submit( function(){
+        doSearch();
+        return false;
+        //e.preventDefault();
+    });
+
     var options = {
         projection:"EPSG:31370",
         maxExtent:new OpenLayers.Bounds(16478.795,19244.928,285000,320000),

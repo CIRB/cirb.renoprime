@@ -9,9 +9,13 @@
 
 
 function geolocalize(addressValue, language, viewObject) {
-    $.get(address_wb_url, { language: language, address:addressValue }, function(data) {
-        viewObject.clear();
-        data=jQuery.parseJSON(data);
+
+    jQuery.support.cors = true;
+    call_url = address_wb_url;
+    //alert(call_url);
+    $.getJSON(call_url, { language: language, address:addressValue }, function(data) {
+        //viewObject.clear();
+        //data=jQuery.parseJSON(data);
         if(data.status=='success')  {
             viewObject.populate(data.result);
             var firstLink=$("#addressList").eq(0).children("tbody").eq(0).children("tr").eq(0).children("td").eq(0).children("a");
@@ -23,7 +27,9 @@ function geolocalize(addressValue, language, viewObject) {
             //msg error to display
             viewObject.error(data);
         }
-    });
+    }).fail(function(jqxhr, textStatus, error) {
+        //alert("Request failed: "+textStatus+", "+error);
+    }) ;
 }
 
 function localize(x,y,map,msg) {

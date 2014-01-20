@@ -4,6 +4,9 @@
     i18n:domain="cirb.renoprime">
 
     <tal:js metal:fill-slot="javascript_head_slot">    
+        <!--[if lte IE 9]>
+        <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.0/jquery.xdomainrequest.min.js'></script>
+        <![endif]-->
     </tal:js>
     <body>
         <div metal:fill-slot="main">
@@ -24,7 +27,7 @@
                     </div>
                     <div id="businessContent">    	
                     </div>
-                    <button type="submit" i18n:attributes="value Rechercher" i18n:translate="Rechercher">Rechercher</button>
+                    <input type="submit" i18n:attributes="value Rechercher" />
                     <table id="addressList"> <tr> <td i18n:translate="liste d'adresses si plusieurs">liste d'adresses si plusieurs</td> </tr> </table>
 
                     <div id="responseText">
