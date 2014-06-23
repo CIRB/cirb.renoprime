@@ -1,5 +1,5 @@
 /*
- * Site: Primes à la rénovation / à l'embellissement
+ * Site: Primes ï¿½ la rï¿½novation / ï¿½ l'embellissement
  * URL: http://www.primes-renovation.be/index.php
  * File: map.js
  *
@@ -102,7 +102,7 @@ function init() {
 
     layer = new OpenLayers.Layer.WMS( "Contrats de quartier",
             urlBrugis,
-            {   layers: 'Contrats_de_quartier',
+            {   layers: 'cspl:Contrats_de_quartier',
                 version:'1.3.0',
           transparent: "true",
           format: 'image/png'
@@ -116,7 +116,7 @@ function init() {
 
     layer_EDRLR = new OpenLayers.Layer.WMS( "EDRLR",
             urlBrugis,
-            {   layers: 'EDRLR',
+            {   layers: 'cspl:EDRLR',
                 version:'1.3.0',
                 transparent: "true",
                 format: 'image/png'
@@ -149,7 +149,7 @@ function init() {
     {
         layer_espaces_structurants = new OpenLayers.Layer.WMS( "Espaces_structurants",
                 urlBrugis,
-                {   layers: 'Espaces_structurants',
+                {   layers: 'cspl:Espaces_structurants',
                     version:'1.3.0',
                     transparent: "true",
                     format: 'image/png'
@@ -159,7 +159,7 @@ function init() {
 
         layer_Zichee = new OpenLayers.Layer.WMS( "Zichee",
                 urlBrugis,
-                {   layers: 'Zichee',
+                {   layers: 'cspl:Zichee',
                     version:'1.3.0',
                      transparent: "true",
                      format: 'image/png'
