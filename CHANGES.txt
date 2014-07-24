@@ -4,7 +4,7 @@ Changelog
 1.1.14 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix typo
 
 
 1.1.13 (2014-07-24)
