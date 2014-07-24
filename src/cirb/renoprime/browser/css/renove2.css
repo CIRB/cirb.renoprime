@@ -5,7 +5,7 @@
  *
  * @author 
  * @version 
- */
+ */ 
 
 /* UrbIS logo */
 .urbISLogo {
@@ -19,45 +19,56 @@
 }
 
 #map {
-    width: 650px;
     height: 650px;
     border: 1px solid gray;
-    float: left;
-    
 }
  
 .map {
-    width: 650px;
     height: 650px;
     border: 1px solid #ccc;
 }
 
 #docs {    
-    float: left;
     border: 1px solid gray;
     margin-left: 12px;
     padding: 5px;
-    width: 220px;
-}
-/*
-#resultTable{
-	border: 1px solid #CCCCCC;
-    padding: 6px;
-}*/
-
-
-th, td {
-    border: 1px solid #CCCCCC;
-    padding: 6px;
-    text-align: left;
 }
 
-label#findaddress {
-    border-bottom: 2px solid #80B600;
+#docs h3, #layerSelectorComponent legend, label#findaddress {
+    border-bottom: 2px solid #FF7814;
     margin-bottom: .5em;
     width: 100%;
     font-weight: normal;
     font-size: 1.25em;
     line-height: 1.5em;
     display: block;
+}
+input#address{
+    width: 90%;
+    margin-bottom: 0;
+}
+#businessContent{
+    line-height: 10px;
+}
+#addressLocatorComponent legend{
+    margin-bottom: 0;
+    padding: 0;
+    line-height: normal;
+}
+#layerSelectorComponent label{
+    display: inline;
+}
+#text_below_map{
+    margin-top: 30px;
+}
+#addressList{
+    margin-top: 10px;
+}
+#content legend{
+    padding: 0;
+}
+#layerSelectorComponent input[type="checkbox"] + label{
+    margin-left: 5px;
+    vertical-align: top;
+    font-size: 11px;
 }

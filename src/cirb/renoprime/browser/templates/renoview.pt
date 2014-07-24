@@ -11,11 +11,20 @@
     <body>
         <div metal:fill-slot="main">
             <tal:main-macro metal:define-macro="main" tal:define="testview view/test">
-            <h1 id="title" tal:content="context/title"></h1>
+            <h1 id="title" class="documentFirstHeading" tal:content="context/title"></h1>
 
-            <div id="text_above_map" tal:content="structure context/getText_above_map"></div>
+<div class="row-fluid">
+        <div class="span12" id="text_above_map" tal:content="structure context/getText_above_map"></div>
+</div>
 
-            <div id="docs">            
+<div class="row-fluid">
+
+        <div class="span9" id="map"
+                tal:attributes="data-today view/get_today;
+                data-gisurl view/get_gis_url;
+                data-mybrugisurl view/get_brugis_url"></div>
+
+            <div id="docs" class="span3">            
                 <form id="address_form" name="address_form" class="address_form" onsubmit="return false;">
                     <div id="addressLocatorComponent"> 
                         <label for="address" id="findaddress" i18n:translate="Recherche d'adresse">Recherche d'adresse</label>	
@@ -31,12 +40,12 @@
                     </fieldset><br-->    	    	
                 </div>
                 <button type="submit" i18n:attributes="value Rechercher" i18n:translate="Rechercher">Rechercher</button>
-                <table id="addressList"> <tr> <td i18n:translate="liste d'adresses si plusieurs">liste d'adresses si plusieurs</td> </tr> </table>
+                <table id="addressList" class="table table-condensed"> <tr> <td i18n:translate="liste d'adresses si plusieurs">liste d'adresses si plusieurs</td> </tr> </table>
 
                 <div id="responseText">
                     <h3 i18n:translate="Taux de la prime">Taux de la prime</h3>    	
 
-                    <table id=resultTable>
+                    <table id="resultTable" class="table table-condensed">
                         <tbody>
                             <tr>
                                 <td class="TableauTitre" i18n:translate="Resultat pour l'adresse :" colspan="2">Resultat pour l'adresse :</td>
@@ -78,13 +87,12 @@
                 </div>
             </form>
         </div> 
-        
-        <div style="width:650px; height:650px" id="map"
-                tal:attributes="data-today view/get_today;
-                data-gisurl view/get_gis_url;
-                data-mybrugisurl view/get_brugis_url"></div>
 
-        <div id="text_below_map" tal:content="structure context/getText_below_map"></div>
+</div>
+<div class="row-fluid">
+        <div class="span12" id="text_below_map" tal:content="structure context/getText_below_map"></div>
+</div>
+    
 
         </tal:main-macro>
     </div>
