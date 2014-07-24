@@ -4,7 +4,7 @@ Changelog
 1.1.13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Make it responsive 
 
 
 1.1.12 (2014-06-23)
