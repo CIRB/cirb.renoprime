@@ -56,7 +56,8 @@ $(document).ready(function(){
         else {
             HTMLtable = noresultI18n[LANG];
         }
-        this.replaceWith(HTMLtable);
+        //this.replaceWith(HTMLtable);
+        $("#addressList").replaceWith(HTMLtable);
     };
 
 
