@@ -4,7 +4,7 @@ Changelog
 1.1.15 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Move conditional javascript.
 
 
 1.1.14 (2014-07-25)
