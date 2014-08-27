@@ -3,11 +3,6 @@
     metal:use-macro="here/main_template/macros/master"
     i18n:domain="cirb.renoprime">
 
-    <tal:js metal:fill-slot="javascript_head_slot">    
-        <!--[if lte IE 9]>
-        <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.0/jquery.xdomainrequest.min.js'></script>
-        <![endif]-->
-    </tal:js>
     <body>
         <div metal:fill-slot="main">
             <tal:main-macro metal:define-macro="main" tal:define="testview view/test">
@@ -92,7 +87,9 @@
 <div class="row-fluid">
         <div class="span12" id="text_below_map" tal:content="structure context/getText_below_map"></div>
 </div>
-    
+<!--[if lte IE 9]>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.0/jquery.xdomainrequest.min.js'></script>
+<![endif]-->
 
         </tal:main-macro>
     </div>
