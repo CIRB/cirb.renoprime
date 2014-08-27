@@ -4,7 +4,7 @@ Changelog
 1.1.16 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Update address list on consecutive calls.
 
 
 1.1.15 (2014-08-27)
