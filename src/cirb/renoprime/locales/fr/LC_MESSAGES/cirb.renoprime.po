@@ -61,7 +61,7 @@ msgstr "La limite des revenus peut être plus élevée selon l’âge et le mén
 
 #: cirb.renoprime:/browser/templates/primeview.pt:61
 msgid "http://www.logement.irisnet.be/fr/primes-et-aides/primes-facades"
-msgstr "http://www.logement.irisnet.be/fr/primes-et-aides/primes-facades"
+msgstr "http://logement.brussels/primes-et-aides/primes-facades"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:61
 #: cirb.renoprime:/browser/templates/renoview.pt:61
@@ -93,7 +93,7 @@ msgstr "Zichee"
 
 #: cirb.renoprime:/browser/templates/renoview.pt:61
 msgid "http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation"
-msgstr "http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation"
+msgstr "http://logement.brussels/primes-et-aides/primes-a-la-renovation"
 
 #. Default: "Text before map"
 #: cirb.renoprime:/content/renoprime.py:34

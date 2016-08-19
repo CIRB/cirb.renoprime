@@ -62,7 +62,7 @@ msgstr "De inkomensgrens kan hoger liggen, afhankelijk van leeftijd en gezin."
 #: cirb.renoprime:/browser/templates/primeview.pt:61
 msgid "http://www.logement.irisnet.be/fr/primes-et-aides/primes-facades"
 msgstr ""
-"http://www.huisvesting.irisnet.be/nl/premies-en-steunmaatregelen/premie-voor-"
+"http://huisvesting.brussels/premies-en-steunmaatregelen/premie-voor-"
 "de-verfraaiing-van-gevels"
 
 #: cirb.renoprime:/browser/templates/primeview.pt:61
@@ -96,7 +96,7 @@ msgstr "GCHEWS"
 #: cirb.renoprime:/browser/templates/renoview.pt:61
 msgid "http://www.logement.irisnet.be/primes-et-aides/primes-a-la-renovation"
 msgstr ""
-"http://www.huisvesting.irisnet.be/nl/premies-en-steunmaatregelen/premie-voor-"
+"http://huisvesting.brussels/premies-en-steunmaatregelen/premie-voor-"
 "de-renovatie-van-het-woonmilieu"
 
 #. Default: "Text before map"

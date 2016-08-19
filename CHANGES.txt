@@ -4,7 +4,8 @@ Changelog
 1.1.17 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix URLs after domain renaming
+  [gotcha]
 
 
 1.1.16 (2014-08-27)
