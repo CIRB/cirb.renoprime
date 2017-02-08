@@ -89,7 +89,7 @@ function init() {
 
     var filter = new OpenLayers.Filter.Comparison({
         type: OpenLayers.Filter.Comparison.BETWEEN,
-        property: "NOTIF_COMM",
+        property: "DT_DEBUT",
         lowerBoundary: isoLowerDate,
         upperBoundary: isoCurrentDate
     });
@@ -102,7 +102,7 @@ function init() {
 
     layer = new OpenLayers.Layer.WMS( "Contrats de quartier",
             urlBrugis,
-            {   layers: 'cspl:Contrats_de_quartier',
+            {   layers: 'cspl:Contrats_de_quartiers_Programmes',
                 version:'1.3.0',
           transparent: "true",
           format: 'image/png'
@@ -191,7 +191,7 @@ function init() {
     info = new OpenLayers.Control.WMSGetFeatureInfo({
         /*FILTER: 'FILTER='+filterAsString,
           filter: 'filter='+filterAsString,*/
-        vendorParams:'filter=<ogc:Filter xmlns:ogc="http://www.opengis.net/ogc"><ogc:PropertyIsBetween><ogc:PropertyName>NOTIF_COMM</ogc:PropertyName><ogc:LowerBoundary><ogc:Literal>2008-12-05</ogc:Literal></ogc:LowerBoundary><ogc:UpperBoundary><ogc:Literal>2012-12-04</ogc:Literal></ogc:UpperBoundary></ogc:PropertyIsBetween></ogc:Filter>',
+        vendorParams:'filter=<ogc:Filter xmlns:ogc="http://www.opengis.net/ogc"><ogc:PropertyIsBetween><ogc:PropertyName>DT_DEBUT</ogc:PropertyName><ogc:LowerBoundary><ogc:Literal>2008-12-05</ogc:Literal></ogc:LowerBoundary><ogc:UpperBoundary><ogc:Literal>2012-12-04</ogc:Literal></ogc:UpperBoundary></ogc:PropertyIsBetween></ogc:Filter>',
          url: urlBrugis,
          title: 'Identify features by clicking',
          layers: (function()
@@ -233,11 +233,11 @@ function init() {
 
                          if(event.features[i].fid.indexOf("quartier")>-1)
                          {
-                             //console.log("NOTIF_COMM:"+event.features[i].attributes.NOTIF_COMM);
+                             //console.log("DT_DEBUT:"+event.features[i].attributes.DT_DEBUT);
 
                              var tempDate=new Date();
                              //2007-12-17
-                             var dateSplit=(event.features[i].attributes.NOTIF_COMM).split('-');
+                             var dateSplit=(event.features[i].attributes.DT_DEBUT).split('-');
 
                              tempDate.setFullYear(dateSplit[0]);
                              tempDate.setMonth(dateSplit[1]);
@@ -318,7 +318,7 @@ function init() {
        QUERY_LAYERS%3DEDRLR%2CContrats_de_quartier%26STYLES%3D%2C%26SERVICE%3DWMS%26VERSION%3D1.3.0%26REQUEST%3D
        GetFeatureInfo%26EXCEPTIONS%3DINIMAGE%26BBOX%3D146817.005906%252C168626.005906%252C152466.994094%252C174275.994094%26
        FEATURE_COUNT=10%26HEIGHT%3D650%26WIDTH%3D650%26FORMAT%3Dimage%252Fpng%26INFO_FORMAT%3Dapplication%252Fvnd.ogc.gml%26CRS%3D
-       EPSG%253A31370&I=498&J=258&filter=<ogc:Filter xmlns:ogc="http://www.opengis.net/ogc"><ogc:PropertyIsBetween><ogc:PropertyName>NOTIF_COMM</ogc:PropertyName><ogc:LowerBoundary><ogc:Literal>2008-12-05</ogc:Literal></ogc:LowerBoundary><ogc:UpperBoundary><ogc:Literal>2012-12-04</ogc:Literal></ogc:UpperBoundary></ogc:PropertyIsBetween></ogc:Filter>
+       EPSG%253A31370&I=498&J=258&filter=<ogc:Filter xmlns:ogc="http://www.opengis.net/ogc"><ogc:PropertyIsBetween><ogc:PropertyName>DT_DEBUT</ogc:PropertyName><ogc:LowerBoundary><ogc:Literal>2008-12-05</ogc:Literal></ogc:LowerBoundary><ogc:UpperBoundary><ogc:Literal>2012-12-04</ogc:Literal></ogc:UpperBoundary></ogc:PropertyIsBetween></ogc:Filter>
      *
      * */
 

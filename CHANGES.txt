@@ -4,7 +4,9 @@ Changelog
 1.1.18 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Update layer to Contrats_de_quartiers_Programmes
+  Change field to DT_DEBUT
+  [gotcha]
 
 
 1.1.17 (2016-08-19)
