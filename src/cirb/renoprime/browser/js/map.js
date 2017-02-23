@@ -102,7 +102,7 @@ function init() {
 
     layer = new OpenLayers.Layer.WMS( "Contrats de quartier",
             urlBrugis,
-            {   layers: 'cspl:Contrats_de_quartiers_Programmes',
+            {   layers: 'BDU_DRU:Contrats_de_quartiers_Programmes',
                 version:'1.3.0',
           transparent: "true",
           format: 'image/png'
@@ -116,7 +116,7 @@ function init() {
 
     layer_EDRLR = new OpenLayers.Layer.WMS( "EDRLR",
             urlBrugis,
-            {   layers: 'cspl:EDRLR',
+            {   layers: 'BDU:EDRLR',
                 version:'1.3.0',
                 transparent: "true",
                 format: 'image/png'
@@ -149,7 +149,7 @@ function init() {
     {
         layer_espaces_structurants = new OpenLayers.Layer.WMS( "Espaces_structurants",
                 urlBrugis,
-                {   layers: 'cspl:Espaces_structurants',
+                {   layers: 'BDU:Espaces_structurants',
                     version:'1.3.0',
                     transparent: "true",
                     format: 'image/png'
@@ -159,7 +159,7 @@ function init() {
 
         layer_Zichee = new OpenLayers.Layer.WMS( "Zichee",
                 urlBrugis,
-                {   layers: 'cspl:Zichee',
+                {   layers: 'BDU:Zichee',
                     version:'1.3.0',
                      transparent: "true",
                      format: 'image/png'
