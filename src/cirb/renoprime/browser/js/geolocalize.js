@@ -12,10 +12,7 @@ function geolocalize(addressValue, language, viewObject) {
 
     jQuery.support.cors = true;
     call_url = address_wb_url;
-    //alert(call_url);
-    $.getJSON(call_url, { language: language, address:addressValue }, function(data) {
-        //viewObject.clear();
-        //data=jQuery.parseJSON(data);
+    $.getJSON(call_url, { language: language, address:addressValue, spatialReference:'31370' }, function(data) {
         if(data.status=='success')  {
             viewObject.populate(data.result);
             var firstLink=$("#addressList").eq(0).children("tbody").eq(0).children("tr").eq(0).children("td").eq(0).children("a");

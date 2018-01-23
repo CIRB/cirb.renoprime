@@ -50,12 +50,22 @@ class MapView(BrowserView):
         today = datetime.now()
         return today.strftime('%Y-%m-%d')
 
-    def get_gis_url(self):
-        url = self.registry.get('cirb.renoprime.gis_url', 'http://gis.irisnet.be/')
+    @property
+    def gis_localization_url_prefix(self):
+        url = self.registry.get(
+            'cirb.renoprime.gis_localization_url_prefix',
+            'https://geoservices.irisnet.be/localization')
+        if url.endswith('/'):
+            url = url[:-1]
         return url
 
-    def get_brugis_url(self):
-        url = self.registry.get('cirb.renoprime.my_brugis_url', 'http://www.mybrugis.irisnet.be/')
+    @property
+    def gis_basemap_url_prefix(self):
+        url = self.registry.get(
+            'cirb.renoprime.gis_basemap_url_prefix',
+            'https://geoservices-urbis.irisnet.be')
+        if url.endswith('/'):
+            url = url[:-1]
         return url
 
 

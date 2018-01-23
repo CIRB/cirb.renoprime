@@ -16,8 +16,8 @@
 
         <div class="span9" id="map"
                 tal:attributes="data-today view/get_today;
-                data-gisurl view/get_gis_url;
-                data-mybrugisurl view/get_brugis_url"></div>
+                data-gis_basemap_url_prefix view/gis_basemap_url_prefix;
+                data-gis_localization_url_prefix view/gis_localization_url_prefix"></div>
 
             <div id="docs" class="span3">            
                 <form id="address_form" name="address_form" class="address_form" onsubmit="return false;">

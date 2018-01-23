@@ -125,7 +125,7 @@ function init() {
             );
 
     layer_batiment=new OpenLayers.Layer.WMS("Batiment Urbis",
-            prefix_gis_url+"geoserver/ows",
+            gis_basemap_url_prefix + "geoserver/ows",
             {'layers': 'urbis:URB_A_BU', transparent: true, format: 'image/png',visible:false},
             {isBaseLayer: false,visible:false}
             );

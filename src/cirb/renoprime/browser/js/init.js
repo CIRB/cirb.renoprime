@@ -2,7 +2,8 @@ var LANG=0;
 var EMBELLIS_MODE=false;
 var address_wb_url;
 var wms_cirb_url;
-var prefix_gis_url;
+var gis_basemap_url_prefix;
+var gis_localization_url_prefix;
 var urlBrugis;
 var currentDate;
 
@@ -44,15 +45,13 @@ $(document).ready(function() {
                 '-'+format_integer((currentDate.getDate()+1));
 
 
-    prefix_gis_url = $('#map').data('gisurl');
-    address_wb_url = prefix_gis_url+"service/urbis/Rest/Localize/getaddresses";
-    //address_wb_url = "/gis/service/urbis/Rest/Localize/getaddresses";
-    wms_cirb_url = prefix_gis_url+"geoserver/wms";
-    //wms_cirb_url = "/gis/geoserver/gwc/service/wms";
+    gis_basemap_url_prefix = $('#map').data('gis_basemap_url_prefix');
+    wms_cirb_url = gis_basemap_url_prefix + "/geoserver/wms";
 
-    //prefix_mybrugis_url = $('#map').data('mybrugisurl');
+    gis_localization_url_prefix = $('#map').data('gis_localization_url_prefix');
+    address_wb_url = gis_localization_url_prefix + "/Rest/Localize/getaddresses";
+    
     urlBrugis = "/proxy/geoserver/ows";
-    //urlBrugis = "http://cirb_site_prime_logement:cSpL_1234@mybrugis.irisnetlab.be/geoserver/ows";
 
     init();
 

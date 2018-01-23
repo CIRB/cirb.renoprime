@@ -1,18 +1,22 @@
 <?xml version="1.0"?>
 <registry>
-    <record name="cirb.renoprime.gis_url">
-        <field type="plone.registry.field.URI">
-            <title>GIS URL</title>
-            <description>Url used to GIS connection</description>
-        </field>
-        <value>http://gis.irisnet.be/</value>
+    <record name="cirb.renoprime.gis_url" purge="true">
     </record>
-    <record name="cirb.renoprime.my_brugis_url">
+    <record name="cirb.renoprime.my_brugis_url" purge="true">
+    </record>
+    <record name="cirb.renoprime.gis_basemap_url_prefix">
         <field type="plone.registry.field.URI">
-            <title>Brugis URL</title>
-            <description>Url used to My Brugis connection</description>
+            <title>GIS basemap URL prefix/title>
+            <description>To fetch GIS basemaps</description>
         </field>
-        <value>http://mybrugis.irisnet.be/</value>
+        <value>https://geoservices-urbis.irisnet.be</value>
+    </record>
+    <record name="cirb.renoprime.gis_localization_url_prefix">
+        <field type="plone.registry.field.URI">
+            <title>GIS localization URL prefix</title>
+            <description>To fetch localization</description>
+        </field>
+        <value>https://geoservices.irisnet.be/localization</value>
     </record>
 </registry>
 
