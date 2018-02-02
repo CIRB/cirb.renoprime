@@ -6,7 +6,7 @@
     </record>
     <record name="cirb.renoprime.gis_basemap_url_prefix">
         <field type="plone.registry.field.URI">
-            <title>GIS basemap URL prefix/title>
+            <title>GIS basemap URL prefix</title>
             <description>To fetch GIS basemaps</description>
         </field>
         <value>https://geoservices-urbis.irisnet.be</value>
