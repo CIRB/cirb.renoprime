@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <registry>
-    <record name="cirb.renoprime.gis_url" purge="true">
+    <record name="cirb.renoprime.gis_url" remove="true">
     </record>
-    <record name="cirb.renoprime.my_brugis_url" purge="true">
+    <record name="cirb.renoprime.my_brugis_url" remove="true">
     </record>
     <record name="cirb.renoprime.gis_basemap_url_prefix">
         <field type="plone.registry.field.URI">
