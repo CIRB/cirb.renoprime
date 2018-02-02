@@ -4,7 +4,8 @@ Changelog
 1.1.22 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Update prime rates
+  [gotcha]
 
 
 1.1.21 (2018-02-02)

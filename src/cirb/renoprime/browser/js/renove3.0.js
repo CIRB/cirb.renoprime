@@ -206,8 +206,8 @@ function getRenoveRates(idResults) {
     var ratesI18n = [];
     /*["Revenus inférieurs à 30000 € : {0}%, entre 30000 et 60000€ : {1}%, revenus supérieurs à 60000€ : {2}%",
         "Inkomen lager dan 30000€ : {0}%, tussen 30000 en 60000€ : {1}%, inkomen hoger dan 60000€ : {2}%"];*/
-    lower_income_min = 33525.36;
-    lower_income_max = 67050.72;
+    lower_income_min = 35782.80;
+    lower_income_max = 71565.60;
 
     ratesI18n[0] = ["Revenus inférieurs à "+floatToFrString(lower_income_min)+" € : {0}%,<br>entre "+floatToFrString(lower_income_min)+" et "+floatToFrString(lower_income_max)+
                     " € : {1}%,<br>revenus supérieurs à "+floatToFrString(lower_income_max)+" € : {2}%",
