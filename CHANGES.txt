@@ -4,7 +4,8 @@ Changelog
 1.1.24 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix geoservice url computation
+  [gotcha]
 
 
 1.1.23 (2018-02-02)
